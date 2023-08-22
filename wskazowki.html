@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pl">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="Aleksandra Olejarz">
+      <title>Oczka wodne i woda w ogrodzie</title>
+      <link rel="icon" type="image/x-icon" href="assets/logo_transparent.png">
+      <!-- Core theme CSS (includes Bootstrap)-->
+      <link href="css/styles.css" rel="stylesheet">
+      <link href="css/dodany-css.css" rel="stylesheet">
+   </head>
+   <body>
+      <!-- Header-->
+      <header class="bg-dark py-1" style="background:linear-gradient(to bottom, #00aaff, #01121c)">
+         <!--dodanie gradientu w tle obiektu header-->
+         <div class="container px-1 px-lg-1 my-1">
+            <!-- px-1 dodanie paddingu poziomego o rozmaierze unit 1 do elementu container, px-lg-1 dodanie paddingu poziomego o rozmiarze unit 1 do bardzo dużych ekranów, my - margin y- dodanie podłużnego elementu margin o wielkości unit 1 -->
+            <div class="text-center text-white">
+               <a href="strona-glowna.html"><img style="height: 350px" src="assets/logo_transparent.png" alt="logo_transparent"></a> <!--dodanie obrazu w nagłówku o wysokości 350 px, po jego naciśnięciu otwierana jest trona główna-->
+            </div>
+         </div>
+      </header>
+      <!-- Navigation-->
+      <nav class="navbar navbar-expand-lg" style="background:linear-gradient(to bottom, #ff9100, #ffdf40); border-top: 3px solid #e02b79; border-bottom:3px solid #e02b79;font-size:20px;">
+         <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" style="border-top: 3px solid #286fbf;border-radius: 90px;color:#286fbf; font-size:13px">Wskazówki</a><!--Zmiana zawartości elementu w zależności od strony na której się znajdujemy, href zawiera #, bo element nie odwołuje się do żadnej strony, informuje użytkownika na której stronie się znajduje-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" style="border-bottom: 3px solid #e02b79; border-radius: 90px; color: #e02b79" id="navbarDropdown" href="o-oczkach-wodnych.html" role="button">O oczkach wodnych</a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #ffdf40; border-top: 3px solid #e02b79; border-bottom: 3px solid #e02b79; font-size: 20px">
+                        <!-- Elementy rozwijanego menu -->
+                        <li>
+                           <a class="dropdown-item" style="color: #286fbf" href="popularne-zwierzeta.html">Popularne zwierzęta</a>
+                        </li>
+                        <li>
+                           <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                           <a class="dropdown-item" style="color: #ecff5c" href="popularne-rosliny.html">Popularne rośliny</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" style="border-bottom: 3px solid #e02b79;border-radius: 90px;color: #e02b79" href="budowa-oczek-wodnych.html">Budowa oczek wodnych</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link active" style="border-bottom: 3px solid #e02b79;border-radius: 90px;color: #e02b79" aria-current="page" href="strona-glowna.html">Strona główna</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" style="border-bottom: 3px solid #e02b79;border-radius: 90px;color: #e02b79" href="oczka-wodne-swiata.html">Oczka wodne świata</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" style="border-top: 3px solid #e02b79;border-radius: 90px;color: #ecff5c" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pielęgnacja oczek wodnych</a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#ffdf40;border-top: 3px solid #e02b79; border-bottom:3px solid #e02b79;font-size:20px;color: #e02b79">
+                        <!--Elementy aria-labelledby i aria-expanded są atrybutami dostępności (Accessibility) używanymi w celu poprawy dostępności dla użytkowników korzystających z czytników ekranowych lub innych asystentów. Atrybut aria-labelledby wskazuje na identyfikator innego elementu, który służy jako etykieta dla danego elementu, a aria-expanded informuje, czy element jest rozwinięty czy nie.-->
+                        <!--
+                           Atrybut data-bs-toggle="dropdown" jest używany wraz z frameworkiem Bootstrap, aby wskazać, że element jest przyciskiem lub linkiem do rozwijanego menu (dropdown).
+                           Kiedy użytkownik kliknie na element, który ma ten atrybut, framework Bootstrap obsługuje akcję rozwijania lub zwijania menu rozwijanego. W przypadku tego kodu, kiedy użytkownik kliknie na link <a>, który ma atrybut data-bs-toggle="dropdown", menu dropdown zostanie rozwinięte lub zwinięte w zależności od aktualnego stanu.
+                           -->
+                        <li>
+                           <a class="dropdown-item" style="color: #286fbf" href="polecane-produkty.html">Polecane produkty</a>
+                        </li>
+                        <li>
+                           <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                           <a class="dropdown-item" style="color:#ecff5c" href="wskazowki.html">Wskazówki</a>
+                        </li>
+                        <!--href zawiera link odwołujący się do danej strony-->
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!-- Header2-->
+      <header class="bg-dark py-1" style="background:linear-gradient(to bottom,#e89833,#fcf2f9)">
+         <!--dodanie gradientu w tle obiektu header-->
+         <div class="container px-3 px-lg-3 my-3">
+            <!-- px-1 dodanie paddingu poziomego o#c4849a rozmaierze unit 1 do elementu container, px-lg-1 dodanie paddingu poziomego o rozmiarze unit 1 do bardzo dużych ekranów, my - margin y- dodanie podłużnego elementu margin o wielkości unit 1 -->
+            <div class="text-center text-white">
+               <h1 class="display- fw-bolder" style="color:#cfa5b3;font-size:54px;font-family: Georgia, sans-serif">Wskazówki</h1>
+            </div>
+         </div>
+      </header>
+      <!-- Section-->
+      <section style="background: linear-gradient(to bottom,#faf5f9,#086296)">
+         <img class="card-img-top fish" src="assets/1622767_1074a.gif" alt="animated-octopus-gif">
+         <div class="btn-group">
+            <div class="dropdown">
+               <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Jakie czynniki należy wziąć pod uwagę podczas planowania oczka wodnego?</button>
+               <ul class="dropdown-menu" style="background: linear-gradient(to bottom, #ffe747, #f7cbe2); width: 80vw;">
+                  <li style="color: #1c1113;font-weight:bold;font-size:18px;font-family: Georgia, sans-serif;display:block;text-align:center;color:#5c334d">Wybór odpowiedniego miejsca: Wybierz miejsce, które jest dobrze naświetlone,<br>
+                     ale nie jest narażone na bezpośrednie działanie słońca przez cały dzień.<br>
+                     <br>
+                     <br>
+                     Rozmiar: Określ, jak duże chcesz, aby oczko wodne było, biorąc pod uwagę dostępną przestrzeń w ogrodzie.<br>
+                     <br>
+                     <br>
+                     Źródło wody: Zastanów się, czy będziesz korzystać z wody z kranu czy<br>
+                     z naturalnego źródła, takiego jak deszczówka.
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="btn-group">
+            <div class="dropdown">
+               <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Jakie rośliny są odpowiednie do oczka wodnego?</button>
+               <ul class="dropdown-menu" style="background: linear-gradient(to bottom, #ffe747, #f7cbe2); width: 80vw;">
+                  <li style="color: #1c1113;font-weight:bold;font-size:18px;font-family: Georgia, sans-serif;display:block;text-align:center;color:#5c334d">Rośliny zanurzone: np. żabieniec, rdestnice, moczarki.<br>
+                     <br>
+                     Rośliny pływające: np. grążel żółty, kaczeńce, krasnorosty wodne.<br>
+                     Rośliny brzegowe: np. irysy wodne, pałki wodne, skrzypce.
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="btn-group">
+            <div class="dropdown">
+               <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Jak można nadać oczku wodnemu atrakcyjny wygląd?</button>
+               <ul class="dropdown-menu" style="background: linear-gradient(to bottom, #ffe747, #f7cbe2); width: 80vw;">
+                  <li style="color: #1c1113;font-weight:bold;font-size:18px;font-family: Georgia, sans-serif;display:block;text-align:center;color:#5c334d">Dodaj elementy dekoracyjne: Na przykład kamienie, kaskady, mostki lub figurki, aby oczko wodne miało unikalny charakter.<br>
+                     Zastosuj oświetlenie: Odpowiednie oświetlenie może podkreślić oczko wodne o zmroku i stworzyć nastrojową atmosferę.
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="btn-group">
+            <div class="dropdown">
+               <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Jak utrzymać zdrową równowagę biologiczną w oczku wodnym?</button>
+               <ul class="dropdown-menu" style="background: linear-gradient(to bottom, #ffe747, #f7cbe2); width: 80vw;">
+                  <li style="color: #1c1113;font-weight:bold;font-size:18px;font-family: Georgia, sans-serif;display:block;text-align:center;color:#5c334d">Dodaj rośliny oczyszczające wodę: Niektóre rośliny, takie jak elodea, wodna fiołek czy lilia wodna, pomagają w naturalnej filtracji wody<br>
+                     i utrzymaniu czystości.<br>
+                     <br>
+                     <br>
+                     Wprowadź odpowiednią liczbę ryb: Ryby mogą pomagać w kontroli owadów i glonów, ale ważne jest, aby nie przekarmiać ich, aby uniknąć nadmiernego zanieczyszczenia wody.
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="btn-group">
+            <div class="dropdown">
+               <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Jak zapobiegać problemom z glonami?</button>
+               <ul class="dropdown-menu" style="background: linear-gradient(to bottom, #ffe747, #f7cbe2); width: 80vw;">
+                  <li style="color: #1c1113;font-weight:bold;font-size:18px;font-family: Georgia, sans-serif;display:block;text-align:center;color:#5c334d">Kontroluj światło słoneczne: Zbyt intensywne światło słoneczne może przyczyniać się<br>
+                     do rozwoju glonów. Możesz zastosować pływające rośliny lub częściowo zacienić oczko wodne.<br>
+                     <br>
+                     <br>
+                     Utrzymuj równowagę składników odżywczych: Unikaj nadmiernego nawożenia wokół oczka wodnego, ponieważ nadmiar składników odżywczych może prowadzić<br>
+                     do nadmiernego wzrostu glonów.<br>
+                     <br>
+                     <br>
+                     Regularnie usuwaj glony: W przypadku wystąpienia glonów, usuń je mechanicznie lub skorzystaj<br>
+                     z odpowiednich środków chemicznych, pamiętając o bezpiecznym stosowaniu dla roślin i ryb.
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="btn-group">
+            <div class="dropdown">
+               <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Jak zapewnić oczku wodnemu optymalne warunki zimą?</button>
+               <ul class="dropdown-menu" style="background: linear-gradient(to bottom, #ffe747, #f7cbe2); width: 80vw;">
+                  <li style="color: #1c1113;font-weight:bold;font-size:18px;font-family: Georgia, sans-serif;display:block;text-align:center;color:#5c334d">Przenośliwość roślin wodnych: Jeśli oczko wodne jest na tyle płytkie, aby się zamarzało, można przenieść niektóre rośliny<br>
+                     do głębszej części oczka<br>
+                     lub do pojemników z wodą wewnątrz,<br>
+                     aby przetrwały zimę.<br>
+                     <br>
+                     <br>
+                     Użyj podgrzewacza lub systemu napowietrzania: W przypadku bardzo niskich temperatur, można zastosować podgrzewacz<br>
+                     lub system napowietrzania,<br>
+                     aby zapobiec całkowitemu zamarzaniu oczka wodnego.
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="btn-group">
+            <div class="dropdown">
+               <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Jak dbać o oczko wodne?</button>
+               <ul class="dropdown-menu" style="background: linear-gradient(to bottom, #ffe747, #f7cbe2); width: 80vw;">
+                  <li style="color: #1c1113;font-weight:bold;font-size:18px;font-family: Georgia, sans-serif;display:block;text-align:center;color:#5c334d">Utrzymuj czystość: Usuwaj regularnie opadłe liście i inne zanieczyszczenia z powierzchni wody. Kontroluj roślinność:<br>
+                     Przycinaj i usuwaj nadmierną roślinność, aby zapobiec zatykaniu oczka wodnego. Monitoruj parametry wody: Sprawdzaj regularnie jakość wody, takie jak pH<br>
+                     i poziom azotanów,<br>
+                     i podejmuj działania korygujące, jeśli to konieczne.<br>
+                     <br>
+                     <br>
+                     Ochrona przed ekstremalnymi warunkami pogodowymi:<br>
+                     W przypadku silnego wiatru, mrozu<br>
+                     lub upałów, podejmuj odpowiednie środki ostrożności, aby chronić oczko wodne.
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="btn-group">
+            <div class="dropdown">
+               <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Jakie są korzyści z posiadania oczka wodnego w ogrodzie?</button>
+               <ul class="dropdown-menu" style="background: linear-gradient(to bottom, #ffe747, #f7cbe2); width: 80vw;">
+                  <li style="color: #1c1113;font-weight:bold;font-size:18px;font-family: Georgia, sans-serif;display:block;text-align:center;color:#5c334d">Oczko wodne dodaje estetyki i spokoju do ogrodu.<br>
+                     <br>
+                     <br>
+                     Może służyć jako środowisko dla roślin wodnych<br>
+                     i zwierząt,<br>
+                     takich jak ryby<br>
+                     i żaby. Oczko wodne przyciąga ptaki<br>
+                     i owady,<br>
+                     które mogą zwiększyć bioróżnorodność<br>
+                     w ogrodzie.
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <br>
+         <br>
+         <br>
+      </section>
+      <section style="background: linear-gradient(to top,#074061,#086296)">
+         <img class="card-img-top fish" src="assets/giphy.gif" alt="animated-octopus-gif">
+         <h3 style="color:#cfa5b3; ;font-family: Georgia, sans-serif;font-size:36px;text-align:center;">Ciekawe fakty o oczkach wodnych</h3>
+         <table>
+            <tr>
+               <th>Fakt</th>
+               <th>Opis</th>
+               <th>Przykład</th>
+               <th>Korzyści</th>
+               <th>Pielegnacja</th>
+            </tr>
+            <tr>
+               <td>Oczka wodne przyczyniają się do poprawy jakości powietrza.</td>
+               <td>Poprzez proces fotosyntezy roślin wodnych, oczka wodne przyczyniają się do usuwania dwutlenku węgla i produkują tlen, co wpływa na poprawę jakości powietrza wokół nich.</td>
+               <td>Rośliny wodne w oczku: rdestnica, grążel żółty</td>
+               <td>Zwiększenie ilości tlenu, zmniejszenie dwutlenku węgla</td>
+               <td>Regularne usuwanie martwych liści</td>
+            </tr>
+            <tr>
+               <td>Oczka wodne mogą służyć jako naturalny habitat dla różnych gatunków zwierząt.</td>
+               <td>Rośliny wodne i mikroorganizmy w oczkach wodnych są siedliskiem dla wielu gatunków zwierząt, takich jak ryby, żaby, owady wodne i wiele innych.</td>
+               <td>Ryby: karp, wzdręga</td>
+               <td>Zwiększenie różnorodności ekosystemu</td>
+               <td>Zapewnienie odpowiedniej ilości pokarmu</td>
+            </tr>
+            <tr>
+               <td>Oczka wodne mogą działać jako naturalny oczyszczacz wody.</td>
+               <td>Rośliny wodne w oczkach mogą pomagać w oczyszczaniu wody poprzez absorpcję substancji odżywczych i zanieczyszczeń, co przyczynia się do poprawy jakości wody.</td>
+               <td>Rośliny oczyszczające: kalina wodna, pływacz zwyczajny</td>
+               <td>Usuwanie zanieczyszczeń, ograniczenie rozwoju glonów</td>
+               <td>Zapewnienie odpowiedniego poziomu filtracji</td>
+            </tr>
+            <tr>
+               <td>Oczka wodne tworzą relaksujący i spokojny nastrój.</td>
+               <td>Dźwięk szmeru wody i piękno roślin wodnych sprawiają, że oczka wodne są idealnym miejscem do relaksu i odpoczynku.</td>
+               <td>Rośliny ozdobne: lilia wodna, trzcina pospolita</td>
+               <td>Poprawa samopoczucia, redukcja stresu</td>
+               <td>Pielęgnacja roślin ozdobnych</td>
+            </tr>
+         </table>
+         <img class="card-img-top fish" src="assets/1297864_76286.gif" alt="animated-octopus-gif">
+      </section>
+      <!-- Footer-->
+      <footer class="py-5" style="background:linear-gradient(to bottom, #074061, #000305)">
+         <div class="container">
+            <p class="m-0 text-center" style="font-size:20px;font-style:italic;color:#FFFFFF">Copyright © Aleksandra Olejarz 2023</p>
+         </div>
+      </footer>
+      <!-- Bootstrap core JS-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> <!-- Core theme JS-->
+      <script src="js/scripts.js"></script>
+   </body>
+</html>

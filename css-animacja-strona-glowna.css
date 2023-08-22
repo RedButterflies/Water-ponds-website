@@ -1,0 +1,57 @@
+.spinning-flower {
+  
+  animation: spin 12s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}/*.spinning-flower: Jest to nazwa klasy CSS, która zostanie przypisana do elementu obrazu kwiatowego, aby uruchomić animację obrotu.
+
+animation: spin 4s infinite linear;: Ta deklaracja ustawia właściwość animation dla elementu z klasą .spinning-flower. Wartość spin odnosi się do nazwy animacji @keyframes spin, a 4s oznacza czas trwania animacji (4 sekundy). Właściwość infinite oznacza, że animacja będzie trwać w nieskończoność, a linear określa funkcję czasową animacji (ruch równomierny).
+
+@keyframes spin: Jest to reguła @keyframes, która definiuje animację obrotu. spin to nazwa animacji, która jest używana w deklaracji animation. Wewnątrz @keyframes są określone dwie klatki kluczowe (keyframes): 0% i 100%.
+
+0%: W tej klatce kluczowej, która reprezentuje początek animacji, określono transformację rotate(0). Oznacza to, że na początku animacji obraz jest obrócony o 0 stopni.
+
+100%: W tej klatce kluczowej, która reprezentuje koniec animacji, określono transformację rotate(360deg). Oznacza to, że na końcu animacji obraz zostanie obrócony o 360 stopni, co odpowiada pełnemu obrotowi wokół osi*/
+
+.fish {
+					 height: 120px;
+					  width: 200px;
+					  margin: 0 auto;
+					  animation: swim 60s infinite linear;
+}
+
+					@keyframes swim {
+					  0% {
+						transform: translateX(-100%);
+					  }
+					  100% {
+						transform: translateX(60vw);
+					  }
+									
+									}
+		
+
+			
+/*.fish: Jest to nazwa klasy CSS, która zostanie przypisana do elementu, aby uruchomić animację pływania.
+
+height: 120px; width: 200px;: Określa wysokość i szerokość elementu o klasie .fish na 120 pikseli i 200 pikseli odpowiednio. Możesz dostosować te wartości do preferencji.
+
+margin: 0 auto;: Ustawia margines górny i dolny na 0, a margines lewy i prawy na auto, co powoduje wyśrodkowanie elementu w poziomie na stronie.
+
+animation: swim 60s infinite linear;: Ta deklaracja ustawia właściwość animation dla elementu z klasą .fish. Wartość swim odnosi się do nazwy animacji @keyframes swim, 60s oznacza czas trwania animacji (60 sekund), infinite oznacza, że animacja będzie trwać w nieskończoność, a linear określa funkcję czasową animacji (ruch równomierny).
+
+@keyframes swim: Jest to reguła @keyframes, która definiuje animację pływania. swim to nazwa animacji, która jest używana w deklaracji animation. Wewnątrz @keyframes są określone dwie klatki kluczowe (keyframes): 0% i 100%.
+
+0%: W tej klatce kluczowej, która reprezentuje początek animacji, określono transformację translateX(-100%). Oznacza to, że na początku animacji element jest przesunięty o 100% szerokości elementu poza lewą krawędź ekranu, co sprawia, że jest niewidoczny.
+
+100%: W tej klatce kluczowej, która reprezentuje koniec animacji, określono transformację translateX(60vw). Oznacza to, że na końcu animacji element jest przesunięty o 60% szerokości widocznego okna (viewport) w prawo, co sprawia, że jest w pełni widoczny*/
+/*value. vw stands for viewport width, so it ensures that the fish will swim across the entire screen regardless of the device's width.*/
+
+

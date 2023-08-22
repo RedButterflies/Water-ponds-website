@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Aleksandra Olejarz">
+  <title>Oczka wodne i woda w ogrodzie</title>
+  <link rel="icon" type="image/x-icon" href="assets/logo_transparent.png"><!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/dodany-css.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header-->
+  <header class="bg-dark py-1" style="background:linear-gradient(to bottom, #00aaff, #01121c)">
+    <!--dodanie gradientu w tle obiektu header-->
+    <div class="container px-1 px-lg-1 my-1">
+      <!-- px-1 dodanie paddingu poziomego o rozmaierze unit 1 do elementu container, px-lg-1 dodanie paddingu poziomego o rozmiarze unit 1 do bardzo dużych ekranów, my - margin y- dodanie podłużnego elementu margin o wielkości unit 1 -->
+      <div class="text-center text-white">
+        <a href="strona-glowna.html"><img style="height: 350px" src="assets/logo_transparent.png" alt="logo_transparent"></a> <!--dodanie obrazu w nagłówku o wysokości 350 px, po jego naciśnięciu otwierana jest trona główna-->
+      </div>
+    </div>
+  </header>
+  <nav class="navbar navbar-expand-lg" style="background:linear-gradient(to bottom, #ff9100, #ffdf40); border-top: 3px solid #e02b79; border-bottom:3px solid #e02b79;font-size:20px;">
+            <div class="container px-4 px-lg-5">
+                 <a class="navbar-brand" style="border-top: 3px solid #286fbf;border-radius: 90px;color:#286fbf; font-size:13px">O oczkach wodnych</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style="border-top: 3px solid #e02b79;border-radius: 90px;color: #ecff5c" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">O oczkach wodnych</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#ffdf40;border-top: 3px solid #e02b79; border-bottom:3px solid #e02b79;font-size:20px;color: #e02b79">
+              <!--Elementy aria-labelledby i aria-expanded są atrybutami dostępności (Accessibility) używanymi w celu poprawy dostępności dla użytkowników korzystających z czytników ekranowych lub innych asystentów. Atrybut aria-labelledby wskazuje na identyfikator innego elementu, który służy jako etykieta dla danego elementu, a aria-expanded informuje, czy element jest rozwinięty czy nie.-->
+              <!--
+                                                                        Atrybut data-bs-toggle="dropdown" jest używany wraz z frameworkiem Bootstrap, aby wskazać, że element jest przyciskiem lub linkiem do rozwijanego menu (dropdown).
+                                                                        Kiedy użytkownik kliknie na element, który ma ten atrybut, framework Bootstrap obsługuje akcję rozwijania lub zwijania menu rozwijanego. W przypadku tego kodu, kiedy użytkownik kliknie na link <a>, który ma atrybut data-bs-toggle="dropdown", menu dropdown zostanie rozwinięte lub zwinięte w zależności od aktualnego stanu.
+                                                                        -->
+              <li>
+                <a class="dropdown-item" style="color: #286fbf" href="popularne-rosliny.html">Popularne rośliny</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li>
+                <a class="dropdown-item" style="color: #286fbf" href="popularne-zwierzeta.html">Popularne zwierzęta</a>
+              </li><!--href zawiera link odwołujący się do danej strony-->
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="border-bottom: 3px solid #e02b79;border-radius: 90px;color: #e02b79" href="budowa-oczek-wodnych.html">Budowa oczek wodnych</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="border-bottom: 3px solid #e02b79;border-radius: 90px;color: #e02b79" aria-current="page" href="strona-glowna.html">Strona główna</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="border-bottom: 3px solid #e02b79;border-radius: 90px;color: #e02b79" href="oczka-wodne-swiata.html">Oczka wodne świata</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style="border-bottom: 3px solid #e02b79;border-radius: 90px;color: #e02b79" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pielęgnacja oczek wodnych</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#ffdf40;border-top: 3px solid #e02b79; border-bottom:3px solid #e02b79;font-size:20px;color: #e02b79">
+              <!--Elementy aria-labelledby i aria-expanded są atrybutami dostępności (Accessibility) używanymi w celu poprawy dostępności dla użytkowników korzystających z czytników ekranowych lub innych asystentów. Atrybut aria-labelledby wskazuje na identyfikator innego elementu, który służy jako etykieta dla danego elementu, a aria-expanded informuje, czy element jest rozwinięty czy nie.-->
+              <!--
+                                                                        Atrybut data-bs-toggle="dropdown" jest używany wraz z frameworkiem Bootstrap, aby wskazać, że element jest przyciskiem lub linkiem do rozwijanego menu (dropdown).
+                                                                        Kiedy użytkownik kliknie na element, który ma ten atrybut, framework Bootstrap obsługuje akcję rozwijania lub zwijania menu rozwijanego. W przypadku tego kodu, kiedy użytkownik kliknie na link <a>, który ma atrybut data-bs-toggle="dropdown", menu dropdown zostanie rozwinięte lub zwinięte w zależności od aktualnego stanu.
+                                                                        -->
+              <li>
+                <a class="dropdown-item" style="color: #286fbf" href="polecane-produkty.html">Polecane produkty</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li>
+                <a class="dropdown-item" style="color: #286fbf" href="wskazowki.html">Wskazówki</a>
+              </li><!--href zawiera link odwołujący się do danej strony-->
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav><!-- Header2-->
+  <header class="bg-dark py-1" style="background:linear-gradient(to bottom, #81a9d4, #0a3059)">
+    <!--dodanie gradientu w tle obiektu header-->
+    <div class="container px-1 px-lg-1 my-1">
+      <!-- px-1 dodanie paddingu poziomego o rozmaierze unit 1 do elementu container, px-lg-1 dodanie paddingu poziomego o rozmiarze unit 1 do bardzo dużych ekranów, my - margin y- dodanie podłużnego elementu margin o wielkości unit 1 -->
+      <div class="text-center text-white">
+        <img class= "spinning-flower" style="height: 150px" src="assets/logo_transparent1.png" alt="logo_transparent1">
+        <h1 class="display-4 fw-bolder" style="color:#91bded;  ;font-family: Georgia, sans-serif">O oczkach wodnych</h1>
+      </div>
+    </div>
+  </header><!-- Section-->
+  <section class="py-5" style="background: linear-gradient(to bottom, #fafafa, #fc90b8)">
+    <!--dodanie gradientu jak tła strony-->
+    <div class="container px-1 px-lg-5 mt-1"><!--"container": Ta klasa jest często używana w frameworkach CSS, takich jak Bootstrap, do utworzenia responsywnego kontenera, który zawiera treść na stronie internetowej. Zapewnia ona kontener o stałej szerokości, z niektórym wewnętrznym marginesem i poziomuje treść w poziomie.
+
+"px-4": Klasa "px-4" dodaje wewnętrzny margines (padding) poziomy o szerokości 4 jednostek (np. pikseli) do kontenera. Prefiks "px" oznacza margines w poziomie (padding-x), a liczba 4 wskazuje szerokość marginesu w jednostkach.
+
+"px-lg-5": Klasa "px-lg-5" dodaje wewnętrzny margines poziomy o szerokości 5 jednostek, ale tylko na większych ekranach (za pomocą zapytań media). Przedrostek "lg" w "px-lg-5" oznacza "large" i wskazuje, że margines będzie stosowany tylko na ekranach odpowiadających warunkom "large".
+
+"mt-5": Klasa "mt-5" dodaje zewnętrzny margines (margin) na górze o wysokości 5 jednostek do kontenera. Prefiks "mt" oznacza margines w pionie (margin-top), a liczba 5 wskazuje wysokość marginesu w jednostkach.-->
+    <div class="row gx-1 gx-lg-1 row-cols-1 row-cols-md-3 row-cols-xl-4 justify-content-center">
+      <div class="col mb-1">
+        <div class="card h-100" style="background:linear-gradient(to bottom, #FFFFFF, #819ff7); border:none">
+          <!--Ten kod tworzy układ siatki (grid layout) za pomocą elementu <div> i klas CSS, jest to układ, który składa się z wierszy (rows) i kolumn (columns).
+
+Klasa "row" definiuje wiersz, a "gx-1 gx-lg-5" odnosi się do marginesów między kolumnami wewnątrz tego wiersza. Klasa "row-cols-2 row-cols-md-3 row-cols-xl-4" definiuje liczbę kolumn w zależności od szerokości ekranu. Na małych ekranach (md) będą 3 kolumny, na większych (xl) będą 4 kolumny, a na pozostałych będą 2 kolumny.
+
+Klasa "justify-content-center" jest używana do wyśrodkowania zawartości w poziomie.
+
+Następnie znajduje się kolejny <div> z klasą "col mb-5", który definiuje pojedynczą kolumnę wewnątrz wiersza. Klasa "mb-5" odnosi się do marginesu dolnego (margin bottom).
+
+Wewnątrz tego <div> znajduje się jeszcze jedno <div> z klasą "card h-100". Prawdopodobnie jest to komponent karty (card) używany do wyświetlania jakiegoś zawartości. Klasa "h-100" odnosi się do ustawienia wysokości karty na 100% wysokości rodzica, aby karta wypełniała całą dostępną przestrzeń w kolumnie.-->
+          <!-- Product details-->
+          <div class="card-body p-4">
+            <div class="text-center" style=" ;font-size:20px;font-family: Georgia, sans-serif">
+              <!--czcionki podane po przecinku, to czcionki dodatkowe, które mają być użyte w przypadku, gdy urządzenie nie obsługuje innych czcionek"-->
+              <h5 class="fw-bolder">Definicja i charakterystyka oczek wodnych</h5><!-- Product name-->
+              <p>Oczka wodne to małe, zwykle płytkie zbiorniki wodne, które zwykle powstają w wyniku działalności człowieka lub naturalnych procesów geologicznych. Zwykle są zasilane wodą deszczową, źródlaną lub podziemną, a ich połączenie z innymi zbiornikami wodnymi może być ograniczone lub całkowicie wyłączone. Charakteryzują się specyficznymi warunkami środowiska, takimi jak zmienność poziomu wody, wysoka temperatura i zasolenie, co wpływa na ich biologiczną różnorodność i złożoną strukturę ekosystemów.</p><!-- Product reviews-->
+              <!-- Product price-->
+            </div>
+          </div><!-- Product actions-->
+        </div>
+      </div>
+      <div class="col mb-1">
+        <div class="card h-100" style="background:linear-gradient(to bottom, #FFFFFF, #819ff7);border:none">
+          <!--dodanie gradientu w tle elementu kartki-->
+          <!-- Sale badge-->
+          <div class="badge bg-dark text-white position-absolute"></div><!-- Product image-->
+          <!-- Product details-->
+          <div class="card-body p-4">
+            <div class="text-center" style=" ;font-size:20px;font-family: Georgia, sans-serif">
+              <!--czcionki podane po przecinku, to czcionki dodatkowe, które mają być użyte w przypadku, gdy urządzenie nie obsługuje innych czcionek"-->
+              <h5 class="fw-bolder">Wpływ oczek wodnych na środowisko naturalne</h5><!-- Product name-->
+              Oczka wodne są ważnym elementem ekosystemów wodnych i są źródłem wody dla roślin i zwierząt w ich pobliżu. Z kolei roślinność i zwierzęta żyjące w oczkach wodnych mogą wpływać na jakość wody poprzez procesy takie jak filtracja i rekultywacja. Oczka wodne mogą również służyć jako obszary oczyszczania wody poprzez usuwanie zanieczyszczeń z wody. <!-- Product reviews-->
+               <!-- Product price-->
+            </div>
+          </div><!-- Product actions-->
+        </div>
+      </div>
+      <div class="col mb-1">
+        <div class="card h-100" style="background:linear-gradient(to bottom, #FFFFFF, #819ff7);border:none">
+          <!--dodanie gradientu w tle elementu kartki-->
+          <!-- Sale badge-->
+          <div class="badge bg-dark text-white position-absolute"></div><!-- Product image-->
+          <!-- Product details-->
+          <div class="card-body p-4">
+            <div class="text-center" style=" ;font-size:20px;font-family: Georgia, sans-serif">
+              <!--czcionki podane po przecinku, to czcionki dodatkowe, które mają być użyte w przypadku, gdy urządzenie nie obsługuje innych czcionek"-->
+              <h5 class="fw-bolder">Zastosowanie oczek wodnych w projektach krajobrazowych</h5><!-- Product name-->
+              Oczka wodne są często stosowane w projektach krajobrazowych jako element ozdobny lub funkcjonalny. Mogą służyć jako miejsce rekreacji, takie jak kąpielisko lub staw rybny. Oczka wodne są również stosowane w projektach krajobrazowych jako elementy zatrzymujące wodę opadową i zmniejszające ryzyko powodzi. <!-- Product reviews-->
+               <!-- Product price-->
+            </div>
+          </div><!-- Product actions-->
+        </div>
+      </div>
+      <div class="col mb-1">
+        <div class="card h-100" style="background:linear-gradient(to bottom, #FFFFFF, #819ff7);border:none">
+          <!--dodanie gradientu w tle elementu kartki-->
+          <!-- Sale badge-->
+          <div class="badge bg-dark text-white position-absolute"></div><!-- Product image-->
+          <!-- Product details-->
+          <div class="card-body p-4">
+            <div class="text-center" style=" ;font-size:20px;font-family: Georgia, sans-serif">
+              <!--czcionki podane po przecinku, to czcionki dodatkowe, które mają być użyte w przypadku, gdy urządzenie nie obsługuje innych czcionek"-->
+              <h5 class="fw-bolder">Utrzymanie oczek wodnych</h5><!-- Product name-->
+              Utrzymanie oczek wodnych wymaga systematycznego czyszczenia, dbałości o stan wody i roślinności wodnej oraz regulacji populacji ryb. Oczka wodne wymagają odpowiedniej filtracji, utrzymywania odpowiedniego poziomu wody oraz stosowania odpowiednich środków chemicznych i naturalnych w celu zapobiegania nadmiernemu rozwojowi glonów i innych organizmów, które mogą zanieczyścić wodę. Ważne jest również regularne usuwanie martwych roślin i detrytusu z dna oczka wodnego oraz ochrona przed wprowadzaniem do niego niepożądanych gatunków roślin i zwierząt. <!-- Product reviews-->
+               <!-- Product price-->
+            </div>
+          </div><!-- Product actions-->
+        </div>
+      </div>
+      <div class="col mb-1">
+        <div class="card h-100" style="background:linear-gradient(to bottom, #FFFFFF, #819ff7);border:none">
+          <!--dodanie gradientu w tle elementu kartki-->
+          <!-- Sale badge-->
+          <div class="badge bg-dark text-white position-absolute"></div><!-- Product image-->
+          <!-- Product details-->
+          <div class="card-body p-4">
+            <div class="text-center" style=" ;font-size:20px;font-family: Georgia, sans-serif">
+              <!--czcionki podane po przecinku, to czcionki dodatkowe, które mają być użyte w przypadku, gdy urządzenie nie obsługuje innych czcionek"-->
+              <h5 class="fw-bolder">Funkcje oczek wodnych</h5><!-- Product name-->
+              Oczka wodne pełnią wiele ważnych funkcji w krajobrazie i ekosystemie, w tym: Estetyczna wartość krajobrazowa: oczka wodne są często wykorzystywane jako element ozdobny w ogrodach i krajobrazach. Ich naturalny wygląd i roślinność wodna przyciągają różne gatunki ptaków, owadów i ryb. Poprawa jakości wody: oczka wodne pełnią ważną rolę w procesie naturalnego oczyszczania wody. Rośliny wodne i mikroorganizmy żyjące w wodzie pochłaniają zanieczyszczenia, takie jak azot i fosfor, poprawiając jakość wody. Ekologiczne znaczenie: oczka wodne są siedliskiem dla wielu gatunków roślin i zwierząt, takich jak żaby, ryby, ptaki wodne i owady, co przyczynia się do utrzymania różnorodności biologicznej. <!-- Product reviews-->
+               <!-- Product price-->
+            </div>
+          </div><!-- Product actions-->
+        </div>
+      </div>
+      <div class="col mb-1">
+        <div class="card h-100" style="background:linear-gradient(to bottom, #FFFFFF, #819ff7);border:none">
+          <!--dodanie gradientu w tle elementu kartki-->
+          <!-- Sale badge-->
+          <div class="badge bg-dark text-white position-absolute"></div><!-- Product image-->
+          <!-- Product details-->
+          <div class="card-body p-4">
+            <div class="text-center" style=" ;font-size:20px;font-family: Georgia, sans-serif">
+              <!--czcionki podane po przecinku, to czcionki dodatkowe, które mają być użyte w przypadku, gdy urządzenie nie obsługuje innych czcionek"-->
+              <h5 class="fw-bolder">Budowa oczek wodnych</h5><!-- Product name-->
+              Oczka wodne są zwykle niewielkimi zbiornikami wodnymi, zwykle płytkimi i zarybianymi. Zwykle mają płaskie dno i półki, które pozwalają roślinom wodnym i innym organizmom żyjącym w wodzie rozwijać się. Oczka wodne są zwykle wyściełane folią, a ich krawędzie są zwykle obsadzone kamieniami lub roślinami, aby zabezpieczyć folię przed uszkodzeniem. <!-- Product reviews-->
+               <!-- Product price-->
+            </div>
+          </div><!-- Product actions-->
+        </div>
+      </div>
+      <div class="col mb-1">
+        <div class="card h-100" style="background:linear-gradient(to bottom, #FFFFFF, #819ff7);border:none">
+          <!--dodanie gradientu w tle elementu kartki-->
+          <!-- Sale badge-->
+          <div class="badge bg-dark text-white position-absolute"></div><!-- Product image-->
+          <!-- Product details-->
+          <div class="card-body p-4">
+            <div class="text-center" style=" ;font-size:20px;font-family: Georgia, sans-serif">
+              <!--czcionki podane po przecinku, to czcionki dodatkowe, które mają być użyte w przypadku, gdy urządzenie nie obsługuje innych czcionek"-->
+              <h5 class="fw-bolder">Zalety oczek wodnych</h5><!-- Product name-->
+              Estetyka: Oczka wodne są pięknym i dekoracyjnym elementem krajobrazu, które dodają uroku i spokoju do przestrzeni. Wodne siedliska: Oczka wodne stanowią siedlisko dla wielu gatunków roślin i zwierząt wodnych, takich jak ryby, żaby, owady, które przyczyniają się do różnorodności biologicznej. Rekreacja: Oczka wodne mogą służyć jako miejsce rekreacyjne, na przykład do pływania, łowienia ryb, czy też po prostu relaksu. Oczyszczanie wody: Oczka wodne mogą pełnić funkcję naturalnego systemu oczyszczania wody, poprzez usuwanie zanieczyszczeń, takich jak azot i fosfor, z wody. <!-- Product reviews-->
+               <!-- Product price-->
+            </div>
+          </div><!-- Product actions-->
+        </div>
+      </div>
+      <div class="col mb-1">
+        <div class="card h-100" style="background:linear-gradient(to bottom, #FFFFFF, #819ff7);border:none">
+          <!--dodanie gradientu w tle elementu kartki-->
+          <!-- Sale badge-->
+          <div class="badge bg-dark text-white position-absolute"></div><!-- Product image-->
+          <!-- Product details-->
+          <div class="card-body p-4">
+            <div class="text-center" style=" ;font-size:20px;font-family: Georgia, sans-serif">
+              <!--czcionki podane po przecinku, to czcionki dodatkowe, które mają być użyte w przypadku, gdy urządzenie nie obsługuje innych czcionek"-->
+              <h5 class="fw-bolder">Najbardziej popularna roślina spotykana w oczkach wodnych</h5><!-- Product name-->
+              LILIA WODNA Wygląd: Lilie wodne mają charakterystyczne liście pływające na powierzchni wody, zwykle duże i okrągłe, które mogą osiągać nawet 30 cm średnicy. Kwiaty lilii wodnych są duże, kolorowe i pachnące, zazwyczaj w kolorze białym, różowym lub fioletowym. Siedlisko: Lilie wodne preferują ciepłe i płytkie wody, gdzie korzenie mają dostęp do podłoża. Mogą rosnąć w wodach o głębokości od kilku centymetrów do kilku metrów. Zastosowanie: Lilie wodne są popularnym elementem dekoracyjnym w ogrodach wodnych i oczkach wodnych. Mogą również pełnić funkcję oczyszczania wody, ponieważ korzenie lilii wodnych absorbują nadmiar składników odżywczych z wody. Pielęgnacja: Lilie wodne wymagają regularnej pielęgnacji, takiej jak cięcie uschniętych liści i kwiatów oraz podlewanie. W celu zapewnienia odpowiedniej ilości składników odżywczych w wodzie, można stosować specjalne nawozy dla roślin wodnych. Rozmnażanie: Lilie wodne można rozmnażać przez nasiona, podział kłącza lub fragmentację korzeni. Jest to dość prosty proces, który pozwala na rozmnażanie roślin wodnych w domowym zaciszu. <!-- Product reviews-->
+               <!-- Product price-->
+            </div>
+          </div><!-- Product actions-->
+        </div>
+      </div>
+      <div class="card text-white my-5 py-4 text-center" style=" ;font-size:24px;font-family: Georgia, sans-serif;background-color: #4666b3;width:800px;border: 6px solid #505a70; box-shadow: 3px 3px 4px gray;">
+        <!--border: [width] [style] [color];-->
+        <!--box-shadow: [horizontal offset] [vertical offset] [blur radius] [spread radius] [color];
+}[horizontal offset]: Specifies the horizontal position of the shadow. It can be a positive or negative value.
+[vertical offset]: Specifies the vertical position of the shadow. It can be a positive or negative value.
+[blur radius]: Specifies the blur radius of the shadow. It controls the amount of blurring applied to the shadow. It can be a length value, such as px, pt, or em.
+[spread radius]: Specifies the spread radius of the shadow. It controls the size of the shadow. It can be a length value.
+[color]: Specifies the color of the shadow. It can be specified using color names, hexadecimal values (#RRGGBB), RGB values (rgb(r, g, b)), or HSL values (hsl(h, s%, l%)).-->
+        <div class="card-body"><img class="card-img-top spinning-flower" src="assets/logo_transparent1.png" style="height:120px;width:200px; margin: 0 auto" alt="rózowy kwiatek, logo strony">
+        <p class="text-white">Czy wiesz, że posiadanie oczka wodnego<br>
+        w ogrodzie może pomóc<br>
+        w zmniejszeniu poziomu stresu i poprawie ogólnego samopoczucia?<br>
+        <br>
+        <br>
+        Badania wykazują, że przebywanie w pobliżu wody może mieć kojący wpływ na umysł i ciało, zmniejszając uczucia niepokoju i stresu. Dźwięk płynącej wody oraz widok ryb pływających w oczku wodnym mogą być szczególnie relaksujące. Tak więc, oczka wodne nie tylko są piękną ozdobą naszej przestrzeni na zewnątrz, ale mogą również stanowić spokojne miejsce ucieczki od codziennych stresów życia.</p><img class="card-img-top spinning-flower" style="height:120px;width:200px; margin: 0 auto" src="assets/logo_transparent1.png" alt="rózowy kwiatek, logo strony"> <img class="card-img-top spinning-flower" style="height:120px;width:200px; margin: 0 auto" src="assets/logo_transparent1.png" alt="rózowy kwiatek, logo strony"></div>
+      </div>
+    </div><img class="card-img-top fish" src="assets/fish.png" alt="fish"></div>
+	  <button  class="btn" type="button" id="woda" style="background:linear-gradient(to bottom, #f2cedf, #eb88b7);color: #fff;border: none;border-radius: 4px;cursor: pointer;font-family: Georgia, sans-serif;padding: 30px 30px;font-size: 20px;display: flex;justify-content: center;align-items: center;margin: 0 auto;" onclick="openPage()">Załaduj wiersz</button>
+  </section><!-- Footer-->
+  <footer class="py-5" style="background:linear-gradient(to top, #fafafa, #fc90b8)">
+    <div class="container">
+      <p class="m-0 text-center" style="font-size:20px;font-style:italic">Copyright © Aleksandra Olejarz 2023</p>
+    </div>
+  </footer><!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> <!-- Core theme JS-->
+   
+  <script src="js/scripts.js"></script>
+</body>
+</html>

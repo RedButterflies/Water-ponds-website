@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pl">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="Aleksandra Olejarz">
+      <title>Oczka wodne i woda w ogrodzie</title>
+      <link rel="icon" type="image/x-icon" href="assets/logo_transparent.png">
+      <!-- Core theme CSS (includes Bootstrap)-->
+      <link href="css/styles.css" rel="stylesheet">
+      <!-- Dodane skrypty fancybox -->
+      <link href="css/css-animacja-strona-glowna.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+   </head>
+   <body>
+      <!-- Header-->
+      <header class="bg-dark py-1" style="background:linear-gradient(to bottom, #00aaff, #01121c)">
+         <!--dodanie gradientu w tle obiektu header-->
+         <div class="container px-1 px-lg-1 my-1">
+            <!-- px-1 dodanie paddingu poziomego o rozmaierze unit 1 do elementu container, px-lg-1 dodanie paddingu poziomego o rozmiarze unit 1 do bardzo dużych ekranów, my - margin y- dodanie podłużnego elementu margin o wielkości unit 1 -->
+            <div class="text-center text-white">
+               <a href="strona-glowna.html"><img style="height: 350px" src="assets/logo_transparent.png" alt="logo_transparent"></a> <!--dodanie obrazu w nagłówku o wysokości 350 px, po jego naciśnięciu otwierana jest trona główna-->
+            </div>
+         </div>
+      </header>
+      <!-- Navigation-->
+      <nav class="navbar navbar-expand-lg" style="background:linear-gradient(to bottom, #ff9100, #ffdf40); border-top: 3px solid #e02b79; border-bottom:3px solid #e02b79;font-size:20px;">
+         <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" style="border-top: 3px solid #286fbf;border-radius: 90px;color:#286fbf; font-size:13px">Popularne rośliny</a><!--Zmiana zawartości elementu w zależności od strony na której się znajdujemy, href zawiera #, bo element nie odwołuje się do żadnej strony, informuje użytkownika na której stronie się znajduje-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" style="border-bottom: 3px solid #e02b79; border-radius: 90px; color: #e02b79" id="navbarDropdown" href="o-oczkach-wodnych.html" role="button">O oczkach wodnych</a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #ffdf40; border-top: 3px solid #e02b79; border-bottom: 3px solid #e02b79; font-size: 20px">
+                        <!-- Elementy rozwijanego menu -->
+                        <li>
+                           <a class="dropdown-item" style="color: #286fbf" href="popularne-zwierzeta.html">Popularne zwierzęta</a>
+                        </li>
+                        <li>
+                           <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                           <a class="dropdown-item" style="color: #ecff5c" href="popularne-rosliny.html">Popularne rośliny</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" style="border-bottom: 3px solid #e02b79;border-radius: 90px;color: #e02b79" href="budowa-oczek-wodnych.html">Budowa oczek wodnych</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link active" style="border-bottom: 3px solid #e02b79;border-radius: 90px;color: #e02b79" aria-current="page" href="strona-glowna.html">Strona główna</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" style="border-bottom: 3px solid #e02b79;border-radius: 90px;color: #e02b79" href="oczka-wodne-swiata.html">Oczka wodne świata</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" style="border-bottom: 3px solid #e02b79;border-radius: 90px;color: #e02b79" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pielęgnacja oczek wodnych</a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#ffdf40;border-top: 3px solid #e02b79; border-bottom:3px solid #e02b79;font-size:20px;color: #e02b79">
+                        <!--Elementy aria-labelledby i aria-expanded są atrybutami dostępności (Accessibility) używanymi w celu poprawy dostępności dla użytkowników korzystających z czytników ekranowych lub innych asystentów. Atrybut aria-labelledby wskazuje na identyfikator innego elementu, który służy jako etykieta dla danego elementu, a aria-expanded informuje, czy element jest rozwinięty czy nie.-->
+                        <!--
+                           Atrybut data-bs-toggle="dropdown" jest używany wraz z frameworkiem Bootstrap, aby wskazać, że element jest przyciskiem lub linkiem do rozwijanego menu (dropdown).
+                           Kiedy użytkownik kliknie na element, który ma ten atrybut, framework Bootstrap obsługuje akcję rozwijania lub zwijania menu rozwijanego. W przypadku tego kodu, kiedy użytkownik kliknie na link <a>, który ma atrybut data-bs-toggle="dropdown", menu dropdown zostanie rozwinięte lub zwinięte w zależności od aktualnego stanu.
+                           -->
+                        <li>
+                           <a class="dropdown-item" style="color: #286fbf" href="polecane-produkty.html">Polecane produkty</a>
+                        </li>
+                        <li>
+                           <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                           <a class="dropdown-item" style="color: #286fbf" href="wskazowki.html">Wskazówki</a>
+                        </li>
+                        <!--href zawiera link odwołujący się do danej strony-->
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!-- Header2-->
+      <header class="bg-dark py-1" style="background:linear-gradient(to top, #f5d7dd, #f04f6f)">
+         <!--dodanie gradientu w tle obiektu header-->
+         <div class="container px-1 px-lg-1 my-1">
+            <!-- px-1 dodanie paddingu poziomego o rozmaierze unit 1 do elementu container, px-lg-1 dodanie paddingu poziomego o rozmiarze unit 1 do bardzo dużych ekranów, my - margin y- dodanie podłużnego elementu margin o wielkości unit 1 -->
+            <img class="spinning-flower" style="height: 150px; float: left;" src="assets/logo_transparent1.png" alt="kwiatek logo"> <img class="spinning-flower" style="height: 150px; float: right;" src="assets/logo_transparent1.png" alt="kwiatek logo"> <!--float: left; and float: right; are CSS properties that control the positioning of elements within their parent container.
+               float: left; makes an element float to the left side of its containing element, allowing other content to wrap around it on the right side.
+               float: right; makes an element float to the right side of its containing element, allowing other content to wrap around it on the left side.-->
+            <div class="text-center text-white">
+               <h1 class="display-4 fw-bolder" style="color:#734554;font-family: Georgia, sans-serif">Najbardziej popularne rośliny<br>
+                  spotykane<br>
+                  w oczkach wodnych
+               </h1>
+            </div>
+         </div>
+      </header>
+      <!-- Section-->
+      <section class="py-5" style="background:linear-gradient(to bottom, #f5d7dd, #f04f6f)">
+         <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-3 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center">
+               <div class="col mb-5">
+                  <div class="card h-100 bg-transparent" style="border:none">
+                     <!-- Product image-->
+                     <a data-fancybox="gallery" href="assets/violet.png"><img class="card-img-top" style="height:400px;width:350px" src="assets/violet.png" alt="Hiacynt Wodny"></a> <!--<a> tag wokół <img> tagu, aby móc zastosować fancybox. Atrybut data-fancybox="gallery" umożliwia grupowanie zdjęć w galerii.-->
+                     <!-- Product details-->
+                     <div class="card-body p-4">
+                        <div class="text-center" style="font-family: Georgia, sans-serif;font-size:20px;">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="font-size:30px;font-style: italic">Pontederia crassipes<br>
+                              (Hiacynt Wodny)
+                           </h5>
+                           <!-- Product price-->
+                           <p>Liście hiacyntu wodnego są wypełnione powietrzem u nasady, co umożliwia mu unoszenie się na powierzchni wody. Dodatkowo, ten egzotyczny gatunek zachwyca bujnymi, liliowo-fioletowymi kwiatami oraz efektownymi, ciemnozielonymi, sercowatymi liśćmi, które idealnie podkreślają jego wyjątkowy wygląd</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+               <div class="col mb-5">
+                  <div class="card h-100 bg-transparent" style="border:none">
+                     <!-- Product image-->
+                     <a data-fancybox="gallery" href="assets/42b8c11d4700b0cfe89ecd64bb7a.jpeg"><img class="card-img-top" style="height:400px;width:350px" src="assets/42b8c11d4700b0cfe89ecd64bb7a.jpeg" alt="Rogatek Sztywny"></a> <!-- Product details-->
+                     <div class="card-body p-4">
+                        <div class="text-center" style="font-family: Georgia, sans-serif;font-size:20px;">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="font-size:30px;font-style: italic">Ceratophyllum demersum<br>
+                              (Rogatek Sztywny)
+                           </h5>
+                           <!-- Product price-->
+                           <p>Rogatek błyskawicznie zarasta akwarium, a w jego gąszczu narybek znajdzie schronienie. To też roślina idealna do hodowli ryb labiryntowych, ponieważ wśród pędów rogatka może ona założyć gniazdo. Ryby labiryntowe to między innymi gurami czy prętniki. Tworzą one w czasie tarła pieniste gniazdo – w rogatku łatwo się ono utrzymuje, a poza tym później świetnie chroni narybek.</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+               <div class="col mb-5">
+                  <div class="card h-100 bg-transparent" style="border:none">
+                     <!-- Product image-->
+                     <a data-fancybox="gallery" href="assets/nymphaea_sunny_pink_2.jpg"><img class="card-img-top" style="height:400px;width:350px" src="assets/nymphaea_sunny_pink_2.jpg" alt="Lilia Wodna"></a> <!-- Product details-->
+                     <div class="card-body p-4">
+                        <div class="text-center" style="font-family: Georgia, sans-serif;font-size:20px;">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="font-size:30px;font-style: italic">Nymphaeaceae<br>
+                              (Lilia Wodna)
+                           </h5>
+                           <!-- Product price-->
+                           <p>Lilie wodne najczęściej są roślinami bardzo silnymi i ekspansywnymi: wykorzystują zarówno bogactwo podłoża jak i pełen dostęp do energii słonecznej. Okrywa z ich liści, która niczym parasol chroni wodę przed nadmiernym nagrzaniem i daje schronienie zwierzętom wodnym, ma duże znaczenie dla życia w wodzie .</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+               <div class="col mb-5">
+                  <div class="card h-100 bg-transparent" style="border:none">
+                     <!-- Product image-->
+                     <a data-fancybox="gallery" href="assets/Swiety-Lotos-rozowy-Nelumbo-Nucifera-Nasiona.jpeg"><img class="card-img-top" style="height:400px;width:350px" src="assets/Swiety-Lotos-rozowy-Nelumbo-Nucifera-Nasiona.jpeg" alt="Lotos orzechodajny"></a> <!-- Product details-->
+                     <div class="card-body p-4">
+                        <div class="text-center" style="font-family: Georgia, sans-serif;font-size:20px;">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="font-size:30px;font-style: italic">Nelumbo nucifera<br>
+                              (Lotos orzechodajny)
+                           </h5>
+                           <!-- Product price-->
+                           <p>Nelumbo Nucifera, czyli Lotos Orzechodajny pochodzi z Azji i jest to roślina wodna która dorasta do 1,8 cm długości. Elementem dekoracyjnym są majestatyczne, jasnoróżowe kwiaty, o średnicy od 15 do 30 cm które pokazują się na przełomie wiosny i lata. Liście osiągają nawet 90 cm szerokości i tworzą zjawisko „efektu lotosu”, czyli samooczyszczania się powierzchni liści.</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+               <div class="col mb-5">
+                  <div class="card h-100 bg-transparent" style="border:none">
+                     <!-- Product image-->
+                     <a data-fancybox="gallery" href="assets/water-lettuce-care-guide-1.jpg"><img class="card-img-top" style="height:400px;width:350px" src="assets/water-lettuce-care-guide-1.jpg" alt="Pistia rozetkowa"></a> <!-- Product details-->
+                     <div class="card-body p-4">
+                        <div class="text-center" style="font-family: Georgia, sans-serif;font-size:20px;">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="font-size:30px;font-style: italic">Pistia stratiotes<br>
+                              (Pistia rozetkowa<br>
+                              "sałata wodna")
+                           </h5>
+                           <!-- Product price-->
+                           <p>W sadzawkach i stawach naszej strefy klimatycznej pistia jest bardzo pożyteczna: jej korzenie pobierają związki pokarmowe wprost z wody wyjaławiając ją w ten sposób i znacznie obniżając populację glonów. W ciągu 2 tygodni, na żyznym zbiorniku, pistia potrafi potroić swoją masę. Pod koniec września lub w październiku należy usunąć pistię na kompost.</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+               <div class="col mb-5">
+                  <div class="card h-100 bg-transparent" style="border:none">
+                     <!-- Product image-->
+                     <a data-fancybox="gallery" href="assets/Irys-zolty-Iris-pseudacorus-3807.jpg"><img class="card-img-top" style="height:400px;width:350px" src="assets/Irys-zolty-Iris-pseudacorus-3807.jpg" alt="Kosaciec żółty"></a> <!-- Product details-->
+                     <div class="card-body p-4">
+                        <div class="text-center" style="font-family: Georgia, sans-serif;font-size:20px;">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="font-size:30px;font-style: italic">Iris pseudacorus<br>
+                              (Kosaciec żółty)
+                           </h5>
+                           <!-- Product price-->
+                           <p>Kosaciec żółty to bardzo łatwa w uprawie roślina, która w naturze może występować wszędzie tam, gdzie znajdzie odpowiednie podłoże, czyli przy stawach, rzekach, w rowach i wszelkich szuwarch dlatego polecany jest do obsadzania oczek wodnych. W dawnych czasach, kwiaty kosaćca żółtego były wykorzystywane do produkcji barwnika, a jego kłącza stanowiły surowiec zielarski (w starożytności). Są też wzmianki o tym, że w czasach wojen w XIX wieku nasiona irysów żółtych były wykorzystywane jako substytut kawy.</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+               <div class="col mb-5">
+                  <div class="card h-100 bg-transparent" style="border:none">
+                     <!-- Product image-->
+                     <a data-fancybox="gallery" href="assets/500_500_productGfx_3868910c9905ee40004bf01e7fd3bc17.jpg"><img class="card-img-top" style="height:400px;width:350px" src="assets/500_500_productGfx_3868910c9905ee40004bf01e7fd3bc17.jpg" alt="Kaczeniec błotny"></a> <!-- Product details-->
+                     <div class="card-body p-4">
+                        <div class="text-center" style="font-family: Georgia, sans-serif;font-size:20px;">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="font-size:30px;font-style: italic">Caltha palustris<br>
+                              (Kaczeniec botny)
+                           </h5>
+                           <!-- Product price-->
+                           <p>W naturalnym środowisku jest spotykana nad brzegami strumieni, stawów czy rozlewisk. Osiąga wysokość 15-30 cm. Zbudowana jest z nagich, płożących łodyg o wznoszących się wierzchołkach. Posiada piękne, lśniące liście o sercowatym kształcie i ząbkowanych brzegach. Kwitnie od kwietnia do maja, wydając śliczne, żółte kwiaty o połyskliwych płatkach</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+               <div class="col mb-5">
+                  <div class="card h-100 bg-transparent" style="border:none">
+                     <!-- Product image-->
+                     <a data-fancybox="gallery" href="assets/https___i.etsystatic.com_15392338_r_il_a3d93f_3001017067_il_fullxfull.3001017067_qzmn.jpg"><img class="card-img-top" style="height:400px;width:350px" src="assets/https___i.etsystatic.com_15392338_r_il_a3d93f_3001017067_il_fullxfull.3001017067_qzmn.jpg" alt="Tojeść rozesłana"></a> <!-- Product details-->
+                     <div class="card-body p-4">
+                        <div class="text-center" style="font-family: Georgia, sans-serif;font-size:20px;">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="font-size:30px;font-style: italic">Lysimachia nummularia<br>
+                              (Tojeść rozesłana)
+                           </h5>
+                           <!-- Product price-->
+                           <p>Tojeść tworzy piękne wypełnienie między skałami lub dywany wśród innych, wyższych roślin o kontrastowych barwach. Limonkowo złoty kolor utrzymuje się cały sezon. Zakwita latem, jednak kwiaty nie mają wartości dekoracyjnych, barwą nie odróżniają się od liści. Tojeść 'Aurea' szczególnie polecana jest do ogrodów skalnych, na murki kwiatowe, rabaty. Świetnie sprawuje się sadzona na brzegach oczka wodnego, znosi nawet częściowe zalanie wodą.</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+               <div class="col mb-5">
+                  <div class="card h-100 bg-transparent" style="border:none">
+                     <!-- Product image-->
+                     <a data-fancybox="gallery" href="assets/1000_F_449220259_M3G3SoCZWPIFSS6Pyp8rZkitfnaH4n9B.jpg"><img class="card-img-top" style="height:400px;width:350px" src="assets/1000_F_449220259_M3G3SoCZWPIFSS6Pyp8rZkitfnaH4n9B.jpg" alt="Pałka szerokolistna"></a> <!-- Product details-->
+                     <div class="card-body p-4">
+                        <div class="text-center" style="font-family: Georgia, sans-serif;font-size:20px;">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="font-size:30px;font-style: italic">Typha latifolia<br>
+                              (Pałka szerokolistna)
+                           </h5>
+                           <!-- Product price-->
+                           <p>Roślina dorasta zwykle do 180-200 cm wysokości. Posiada wzniesiony, trawiasty pokrój. Jest ekspansywna i mocno rozrasta się wszerz. Liście są długie, równowąskie. Kwiaty żeńskie są ciemnie, brunatnoczarne, zebrane w okazałe kolby. Kwiatostany męskie są nieco jaśniejsze i znajdują się tuż nad żeńskimi. Kwitnie latem - najczęściej od lipca do września. Owoce są białe, puchowate orzeszki. Częścią podziemną jest kłącze.</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+               <div class="col mb-5">
+                  <div class="card h-100 bg-transparent" style="border:none">
+                     <!-- Product image-->
+                     <a data-fancybox="gallery" href="assets/Lobelia_lsniaca_wieloletnia_Lobelia_fulgens.jpg"><img class="card-img-top" style="height:400px;width:350px" src="assets/Lobelia_lsniaca_wieloletnia_Lobelia_fulgens.jpg" alt="Lobelia szkarłatna"></a> <!-- Product details-->
+                     <div class="card-body p-4">
+                        <div class="text-center" style="font-family: Georgia, sans-serif;font-size:20px;">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="font-size:30px;font-style: italic">Lobelia cardinalis<br>
+                              (Lobelia szkarłatna)
+                           </h5>
+                           <!-- Product price-->
+                           <p>Liście są ciemnozielone, lancetowate z ciemnymi bordowymi smugami. Mogą efektownie przebarwiać się na bordowo-fioletowo. Lobelia kwitnie długo, od lipca do września. Wargowe kwiaty lobeli szkarłatnej są ułożone jednostronnie i tworzą kłosowate kwiatostany i mają intensywnie czerwoną barwę.</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+               <div class="col mb-5">
+                  <div class="card h-100 bg-transparent" style="border:none">
+                     <!-- Product image-->
+                     <a data-fancybox="gallery" href="assets/istockphoto-622033088-612x612.jpg"><img class="card-img-top" style="height:400px;width:350px" src="assets/istockphoto-622033088-612x612.jpg" alt="Tatarak zwyczajny"></a> <!-- Product details-->
+                     <div class="card-body p-4">
+                        <div class="text-center" style="font-family: Georgia, sans-serif;font-size:20px;">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="font-size:30px;font-style: italic">Acorus calamus<br>
+                              (Tatarak zwyczajny)
+                           </h5>
+                           <!-- Product price-->
+                           <p>Wymaga płytkiej wody lub miejsca zaledwie podmokłego, nie przesychającego, słonecznego lub lekko ocienionego. Kłącze płoży się poziomo; tatarak najlepiej rośnie sadzony wprost w dnie zbiornika wodnego lub w płytkich lecz szerokich koszach, donicach, misach.</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+               <div class="col mb-5">
+                  <div class="card h-100 bg-transparent" style="border:none">
+                     <!-- Product image-->
+                     <a data-fancybox="gallery" href="assets/Hydrocleys_nymphoides_1-800x800.jpg"><img class="card-img-top" style="height:400px;width:350px" src="assets/Hydrocleys_nymphoides_1-800x800.jpg" alt="Hydrokleis grzynieniowaty"></a> <!-- Product details-->
+                     <div class="card-body p-4">
+                        <div class="text-center" style="font-family: Georgia, sans-serif;font-size:20px;">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="font-size:30px;font-style: italic">Phydrocleys nymphoides<br>
+                              (Hydrokleis grzynieniowaty)
+                           </h5>
+                           <!-- Product price-->
+                           <p>Kwiaty pojedyncze, duże, dorodne, trój płatkowe, jaskrawożółte z pomarańczowym odcieniem przy podstawie, mają liliowe pręciki i są bez zapachu. Aby roślina mogła zakwitnąć pączki kwiatowe koniecznie muszą rozwijać się nad wodą w przeciwnym wypadku gniją i obumierają, dlatego w akwarium trzeba je podnosić. W okresie kwitnienia roślina potrzebuje zwiększonej ilości światła i ciepła.</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+            </div>
+         </div>
+         <p class="text-center" style=" ;font-family: Georgia, sans-serif; font-size:26px; color:#f5d7dd;box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);">
+            <!--box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); definiuje cień dla danego elementu. 
+               box-shadow: Jest to właściwość CSS, która służy do dodawania efektu cienia do elementu.
+               
+               0px 0px 5px: Ta część określa przesunięcie i rozmycie cienia. Konkretnie:
+               
+               0px - przesunięcie cienia w osi X (poziome przesunięcie). W tym przypadku nie ma przesunięcia poziomego, ponieważ wartość to 0px.
+               0px - przesunięcie cienia w osi Y (pionowe przesunięcie). W tym przypadku również nie ma przesunięcia pionowego, wartość to 0px.
+               5px - rozmycie cienia. Określa stopień rozmycia cienia. Im większa wartość, tym bardziej rozmyty będzie cień.
+               rgba(0, 0, 0, 0.5): Jest to wartość koloru cienia. Składa się z czterech składowych:
+               
+               0, 0, 0 - składowe koloru RGB. W tym przypadku są to wartości 0 dla czerwonego, zielonego i niebieskiego, co oznacza, że cień jest czarny.
+               0.5 - wartość alfa (przezroczystość). Wartość ta mieści się w zakresie od 0 do 1, gdzie 0 oznacza pełną przezroczystość, a 1 oznacza brak przezroczystości. W tym przypadku, wartość 0.5 oznacza, że cień jest półprzezroczysty.-->NAJPIĘKNIEJSZE ROŚLINY
+         </p>
+         <!--dodanie paragrafu z tytułem galerii-->
+         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <a data-fancybox="gallery" href="assets/b5b54eca9bf1401cbb692341b1d51a66.jpg"><img style="height: 350px; display: block; margin: 0 auto;" src="assets/b5b54eca9bf1401cbb692341b1d51a66.jpg" alt="Pierwszy slajd-zdjęcie lilii wodnej"></a>
+               </div>
+               <div class="carousel-item">
+                  <a data-fancybox="gallery" href="assets/pexels-photo-5568142.webp"><img style="height: 350px; display: block; margin: 0 auto;" src="assets/pexels-photo-5568142.webp" alt="Drugi slajd-zdjęcie różowego lotosu"></a>
+               </div>
+               <div class="carousel-item">
+                  <a data-fancybox="gallery" href="assets/nymphaea_sunny_pink_2.jpg"><img style="height: 350px; display: block; margin: 0 auto;" src="assets/nymphaea_sunny_pink_2.jpg" alt="Trzeci slajd-zdjęcie lilii wodnej"></a>
+               </div>
+               <div class="carousel-item">
+                  <a data-fancybox="gallery" href="assets/pexels-sourav-majumdar-6642394.jpg"><img style="height: 350px; display: block; margin: 0 auto;" src="assets/pexels-sourav-majumdar-6642394.jpg" alt="Czwarty slajd-różowa lilia wodna"></a>
+               </div>
+               <div class="carousel-item">
+                  <a data-fancybox="gallery" href="assets/RoyalBotanicGarden.webp"><img style="height: 350px; display: block; margin: 0 auto;" src="assets/RoyalBotanicGarden.webp" alt="Piąty slajd-lilia wodna w oczku wodnym"></a>
+               </div>
+               <div class="carousel-item">
+                  <a data-fancybox="gallery" href="assets/sacred-lotus-nelumbo-nucifera-maria-mosolovascience-photo-library.jpg"><img style="height: 350px; display: block; margin: 0 auto;" src="assets/sacred-lotus-nelumbo-nucifera-maria-mosolovascience-photo-library.jpg" alt="Szósty slajd-zdjęcie lilii wodnej"></a>
+               </div>
+            </div>
+            <button style="background:linear-gradient(to top, #ba4ca6,#FFFFFF)" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"><span class="visually-hidden">Previous</span></button> <button style="background:linear-gradient(to top, #ba4ca6,#FFFFFF)" class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"><span class="visually-hidden">Next</span></button>
+         </div>
+         <!-- dodanie biblioteki fancybox, w celu umożliwienia powiększania zdjęć w galerii po kliknięciu na nie i zschowania możliwości nawigacji między zdjęciami galerii w trybie powiększenia-->
+      </section>
+      <!-- Footer-->
+      <footer class="py-5" style="background:linear-gradient(to top, #f5d7dd, #f04f6f)">
+         <div class="container">
+            <p class="m-0 text-center" style="font-size:20px;font-style:italic">Copyright © Aleksandra Olejarz 2023</p>
+         </div>
+      </footer>
+      <!-- Bootstrap core JS-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> <!-- Core theme JS-->
+      <script src="js/scripts.js"></script>
+   </body>
+</html>

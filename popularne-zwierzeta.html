@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pl">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="Aleksandra Olejarz">
+      <title>Oczka wodne i woda w ogrodzie</title>
+      <link rel="icon" type="image/x-icon" href="assets/logo_transparent.png">
+      <!-- Core theme CSS (includes Bootstrap)-->
+      <link href="css/styles.css" rel="stylesheet">
+	  <link href="css/css-animacja-strona-glowna.css" rel="stylesheet">
+      <!-- Dodane skrypty fancybox -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+   </head>
+   <body>
+      <!-- Header-->
+      <header class="bg-dark py-1" style="background:linear-gradient(to bottom, #00aaff, #01121c)">
+         <!--dodanie gradientu w tle obiektu header-->
+         <div class="container px-1 px-lg-1 my-1">
+            <!-- px-1 dodanie paddingu poziomego o rozmaierze unit 1 do elementu container, px-lg-1 dodanie paddingu poziomego o rozmiarze unit 1 do bardzo dużych ekranów, my - margin y- dodanie podłużnego elementu margin o wielkości unit 1 -->
+            <div class="text-center text-white">
+               <a href="strona-glowna.html"><img style="height: 300px" src="assets/logo_transparent.png" alt="logo_transparent"></a> <!--dodanie obrazu w nagłówku o wysokości 350 px, po jego naciśnięciu otwierana jest trona główna-->
+            </div>
+         </div>
+      </header>
+      <!-- Navigation-->
+      <nav class="navbar navbar-expand-lg" style="background:linear-gradient(to bottom, #ff9100, #ffdf40); border-top: 3px solid #e02b79; border-bottom:3px solid #e02b79;font-size:20px;">
+         <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" style="border-top: 3px solid #286fbf;border-radius: 90px;color:#286fbf; font-size:13px" >Popularne zwierzęta</a><!--Zmiana zawartości elementu w zależności od strony na której się znajdujemy, href zawiera #, bo element nie odwołuje się do żadnej strony, informuje użytkownika na której stronie się znajduje-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" style="border-bottom: 3px solid #e02b79; border-radius: 90px; color: #e02b79" id="navbarDropdown" href="o-oczkach-wodnych.html" role="button">O oczkach wodnych</a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #ffdf40; border-top: 3px solid #e02b79; border-bottom: 3px solid #e02b79; font-size: 20px">
+                        <!-- Elementy rozwijanego menu -->
+                        <li>
+                           <a class="dropdown-item" style="color: #286fbf" href="popularne-zwierzeta.html">Popularne zwierzęta</a>
+                        </li>
+                        <li>
+                           <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                           <a class="dropdown-item" style="color: #ecff5c" href="popularne-rosliny.html">Popularne rośliny</a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" style="border-bottom: 3px solid #e02b79;border-radius: 90px;color: #e02b79" href="budowa-oczek-wodnych.html">Budowa oczek wodnych</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link active" style="border-bottom: 3px solid #e02b79;border-radius: 90px;color: #e02b79" aria-current="page" href="strona-glowna.html">Strona główna</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" style="border-bottom: 3px solid #e02b79;border-radius: 90px;color: #e02b79" href="oczka-wodne-swiata.html">Oczka wodne świata</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" style="border-bottom: 3px solid #e02b79;border-radius: 90px;color: #e02b79" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pielęgnacja oczek wodnych</a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#ffdf40;border-top: 3px solid #e02b79; border-bottom:3px solid #e02b79;font-size:20px;color: #e02b79">
+                        <!--Elementy aria-labelledby i aria-expanded są atrybutami dostępności (Accessibility) używanymi w celu poprawy dostępności dla użytkowników korzystających z czytników ekranowych lub innych asystentów. Atrybut aria-labelledby wskazuje na identyfikator innego elementu, który służy jako etykieta dla danego elementu, a aria-expanded informuje, czy element jest rozwinięty czy nie.-->
+                        <!--
+                           Atrybut data-bs-toggle="dropdown" jest używany wraz z frameworkiem Bootstrap, aby wskazać, że element jest przyciskiem lub linkiem do rozwijanego menu (dropdown).
+                           Kiedy użytkownik kliknie na element, który ma ten atrybut, framework Bootstrap obsługuje akcję rozwijania lub zwijania menu rozwijanego. W przypadku tego kodu, kiedy użytkownik kliknie na link <a>, który ma atrybut data-bs-toggle="dropdown", menu dropdown zostanie rozwinięte lub zwinięte w zależności od aktualnego stanu.
+                           -->
+                        <li>
+                           <a class="dropdown-item" style="color: #286fbf" href="polecane-produkty.html">Polecane produkty</a>
+                        </li>
+                        <li>
+                           <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                           <a class="dropdown-item" style="color: #286fbf" href="wskazowki.html">Wskazówki</a>
+                        </li>
+                        <!--href zawiera link odwołujący się do danej strony-->
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!-- Header2-->
+      <header class="bg-dark py-1" style="background:linear-gradient(to bottom, #4a1621, #0a0204)">
+         <!--dodanie gradientu w tle obiektu header-->
+         <div class="container px-1 px-lg-1 my-1">
+            <!-- px-1 dodanie paddingu poziomego o rozmaierze unit 1 do elementu container, px-lg-1 dodanie paddingu poziomego o rozmiarze unit 1 do bardzo dużych ekranów, my - margin y- dodanie podłużnego elementu margin o wielkości unit 1 -->
+            <img  style="height: 150px; float: left;" src="assets/logo_transparent1.png" alt="kwiatek logo"> <!--filter:grayscale(100%) zmiana koloru na skalę szarości-->
+            <img style="height: 150px; float: right;" src="assets/logo_transparent1.png" alt="kwiatek logo"> <!--float: left; and float: right; are CSS properties that control the positioning of elements within their parent container.
+               float: left; makes an element float to the left side of its containing element, allowing other content to wrap around it on the right side.
+               float: right; makes an element float to the right side of its containing element, allowing other content to wrap around it on the left side.-->
+            <div class="text-center text-white">
+               <h1 class="display-4 fw-bolder" style="color:#d60d3f;font-family: Georgia, sans-serif">Najbardziej popularne zwierzęta<br>
+                  spotykane<br>
+                  w oczkach wodnych
+               </h1>
+              <img style="height:100px;width:auto;" src="assets/SpecificDefiniteAtlanticsharpnosepuffer-size_restricted.gif" alt="rybka">
+            </div>
+         </div>
+      </header>
+      <!-- Section-->
+      <section class="py-5" style="background:linear-gradient(to bottom, #fff0f4, #fcb17e)">
+         <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-3 gx-lg-0 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center">
+               <!--row: It defines a row container that holds the columns.
+                  gx-4: It adds a horizontal gutter (space between columns) of 4 units. The value 4 can be adjusted to increase or decrease the space between columns.
+                  gx-lg-3: It adds a horizontal gutter of 3 units, specifically for large (lg) screens. The value 3 can be adjusted as per your requirements.
+                  row-cols-1: It sets the number of columns to be displayed in a row to 1 for extra small and small screens.
+                  row-cols-md-2: It sets the number of columns to be displayed in a row to 2 for medium-sized screens.
+                  row-cols-xl-3: It sets the number of columns to be displayed in a row to 3 for extra-large screens.-->
+               <div class="col mb-5">
+                  <div class="card h-100 bg-transparent" style="border:none">
+                     <!-- Product image-->
+                     <a data-fancybox="gallery" href="assets/karpie-koi-13.jpg"><img class="card-img-top" style="height:300px;width:400px" src="assets/karpie-koi-13.jpg" alt="Karpie koi"></a> <!--<a> tag wokół <img> tagu, aby móc zastosować fancybox. Atrybut data-fancybox="gallery" umożliwia grupowanie zdjęć w galerii.-->
+                     <!-- Product details-->
+                     <div class="card-body p-4">
+                        <!--In Bootstrap, the "p-4" class is used to apply padding to an element. The "p" stands for "padding," and the "4" represents a predefined value for the amount of padding.-->
+                        <div class="text-center" style="font-family: Georgia, sans-serif;font-size:20px;">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="font-size:30px;font-style: italic">Nishiki-goi<br>
+                              (​Karp brokatowy)
+                           </h5>
+                           <!-- Product price-->
+                           <p>Ozdobna forma hodowlana karpia (Cyprinus carpio) w Japonii. Dorosłe osobniki osiągają długość do 100 cm. Mają atrakcyjne ubarwienie, hodowane są w stawach parkowych, oczkach wodnych i basenach rybnych. Nazwa koi jest popularnym skrótem od nishiki-goi. Nazywane są „pływającymi klejnotami” lub „pływającymi dziełami sztuki”. Poza Japonią stały się znane po tym, jak pokazano je na dorocznej wystawie w Tokio w 1914 roku</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+               <div class="col mb-5">
+                  <div class="card h-100 bg-transparent" style="border:none">
+                     <!-- Product image-->
+                     <a data-fancybox="gallery" href="assets/goldfish-interesting-and-surprising-facts-about-a-popular-pet.jpg"><img class="card-img-top" style="height:300px;width:400px" src="assets/goldfish-interesting-and-surprising-facts-about-a-popular-pet.jpg" alt="Złoty karaś"></a> <!--<a> tag wokół <img> tagu, aby móc zastosować fancybox. Atrybut data-fancybox="gallery" umożliwia grupowanie zdjęć w galerii.-->
+                     <!-- Product details-->
+                     <div class="card-body p-4">
+                        <!--In Bootstrap, the "p-4" class is used to apply padding to an element. The "p" stands for "padding," and the "4" represents a predefined value for the amount of padding.-->
+                        <div class="text-center" style="font-family: Georgia, sans-serif;font-size:20px;">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="font-size:30px;font-style: italic">Carassius auratus<br>
+                              (Złoty karaś<br>
+                              "złota rybka")
+                           </h5>
+                           <!-- Product price-->
+                           <p>Złote rybki to popularne na całym świecie ryby ozdobne, głównie akwariowe. Były hodowane w basenach (sadzawki, oczka wodne) i akwariach w Chinach już od VII wieku n.e. Znanych jest wiele odmian różniących się kształtem ciała, długością i kształtem płetw, jak i ubarwieniem.</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+               <div class="col mb-5">
+                  <div class="card h-100 bg-transparent" style="border:none">
+                     <!-- Product image-->
+                     <a data-fancybox="gallery" href="assets/gemeiner-sonnenbarsch.jpg"><img class="card-img-top" style="height:300px;width:400px" src="assets/gemeiner-sonnenbarsch.jpg" alt="Bass Słoneczny"></a> <!--<a> tag wokół <img> tagu, aby móc zastosować fancybox. Atrybut data-fancybox="gallery" umożliwia grupowanie zdjęć w galerii.-->
+                     <!-- Product details-->
+                     <div class="card-body p-4">
+                        <!--In Bootstrap, the "p-4" class is used to apply padding to an element. The "p" stands for "padding," and the "4" represents a predefined value for the amount of padding.-->
+                        <div class="text-center" style="font-family: Georgia, sans-serif;font-size:20px;">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="font-size:30px;font-style: italic">Lepomis gibbosus<br>
+                              (Bass Słoneczny)
+                           </h5>
+                           <!-- Product price-->
+                           <p>Grzbiet oliwkowozielony, boki niebieskawe, błyszczące, pokryte jaskrawymi, okrągławymi czerwonymi lub pomarańczowymi plamami. Wzdłuż głowy biegną błyszczące, niebieskie i pomarańczowe. Narybek żywi się planktonem, dorosłe zjadają głównie bezkręgowce oraz małe ryby.</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+               <div class="col mb-5">
+                  <div class="card h-100 bg-transparent" style="border:none">
+                     <!-- Product image-->
+                     <a data-fancybox="gallery" href="assets/istockphoto-1081367822-612x612.jpg"><img class="card-img-top" style="height:300px;width:400px" src="assets/istockphoto-1081367822-612x612.jpg" alt="Żaba trawna"></a> <!--<a> tag wokół <img> tagu, aby móc zastosować fancybox. Atrybut data-fancybox="gallery" umożliwia grupowanie zdjęć w galerii.-->
+                     <!-- Product details-->
+                     <div class="card-body p-4">
+                        <!--In Bootstrap, the "p-4" class is used to apply padding to an element. The "p" stands for "padding," and the "4" represents a predefined value for the amount of padding.-->
+                        <div class="text-center" style="font-family: Georgia, sans-serif;font-size:20px;">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="font-size:30px;font-style: italic">Rana temporaria<br>
+                              (Żaba trawna)
+                           </h5>
+                           <!-- Product price-->
+                           <p>Należy do grupy żab brunatnych. Najczęściej skóra jest brązowa i oliwkowozielona. Na ciele występują brązowe lub czarne plamy. Charakterystyczne są dla tego gatunku ciemne plamy skroniowe, plama na środku grzbietu, na udach poprzeczne, ciemne pręgi. Linia kręgowa nie jest widoczna. Zjada owady, także stawonogi, dżdżownice i ślimaki</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+               <div class="col mb-5">
+                  <div class="card h-100 bg-transparent" style="border:none">
+                     <!-- Product image-->
+                     <a data-fancybox="gallery" href="assets/images1.jpeg"><img class="card-img-top" style="height:300px;width:400px" src="assets/images1.jpeg" alt="Karpie koi"></a> <!--<a> tag wokół <img> tagu, aby móc zastosować fancybox. Atrybut data-fancybox="gallery" umożliwia grupowanie zdjęć w galerii.-->
+                     <!-- Product details-->
+                     <div class="card-body p-4">
+                        <!--In Bootstrap, the "p-4" class is used to apply padding to an element. The "p" stands for "padding," and the "4" represents a predefined value for the amount of padding.-->
+                        <div class="text-center" style="font-family: Georgia, sans-serif;font-size:20px;">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="font-size:30px;font-style: italic">Notonectidae<br>
+                              (Pluskolcowate)
+                           </h5>
+                           <!-- Product price-->
+                           <p>Osiągają od 5 do 15 mm długości ciała, którego kształt jest łódkowaty.W wodzie poruszają się pod powierzchnią grzbietem do dołu. Poruszanie się w wodzie ułatwiają owłosione, tylne odnóża. Pokrywy skrzydłowe zachodzące na siebie, po osuszeniu skrzydeł pluskolcowate dobrze latają. Samce niektórych Anisopinae wytwarzają dźwięki.Pluskolcowate żywią się innymi stworzeniami wodnymi zarówno bezkręgowymi jak drobnymi kręgowcami takimi jak małe ryby.</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+               <div class="col mb-5">
+                  <div class="card h-100 bg-transparent" style="border:none">
+                     <!-- Product image-->
+                     <a data-fancybox="gallery" href="assets/2558eca3d5ae8642adbcad198e93ed37_XL.jpg"><img class="card-img-top" style="height:300px;width:400px" src="assets/2558eca3d5ae8642adbcad198e93ed37_XL.jpg" alt="Karpie koi"></a> <!--<a> tag wokół <img> tagu, aby móc zastosować fancybox. Atrybut data-fancybox="gallery" umożliwia grupowanie zdjęć w galerii.-->
+                     <!-- Product details-->
+                     <div class="card-body p-4">
+                        <!--In Bootstrap, the "p-4" class is used to apply padding to an element. The "p" stands for "padding," and the "4" represents a predefined value for the amount of padding.-->
+                        <div class="text-center" style="font-family: Georgia, sans-serif;font-size:20px;">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="font-size:30px;font-style: italic">Ictalurus punctatus<br>
+                              (Sumik kanałowy)
+                           </h5>
+                           <!-- Product price-->
+                           <p>Sumik kanałowy jest przydennym gatunkiem wolno i umiarkowanie szybko płynących rzek, strumieni i kanałów. Zamieszkuje duże rzeki i ich dopływy. Sumik kanałowy lubi miejsca bogate w liczne kryjówki. Preferuje dno kamieniste, żwirowe lub piaszczyste. Jest gatunkiem głównie słodkowodnym, ale rzadziej spotykany jest również w wodach słonawych a nawet słonych. Tarło odbywa późną wiosną lub wczesnym latem.</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+               <div class="col mb-5">
+                  <div class="card h-100 bg-transparent" style="border:none">
+                     <!-- Product image-->
+                     <a data-fancybox="gallery" href="assets/1200px-Water_snail_Rex_2.jpg"><img class="card-img-top" style="height:300px;width:400px" src="assets/1200px-Water_snail_Rex_2.jpg" alt="Błotniarka stawowa"></a> <!--<a> tag wokół <img> tagu, aby móc zastosować fancybox. Atrybut data-fancybox="gallery" umożliwia grupowanie zdjęć w galerii.-->
+                     <!-- Product details-->
+                     <div class="card-body p-4">
+                        <!--In Bootstrap, the "p-4" class is used to apply padding to an element. The "p" stands for "padding," and the "4" represents a predefined value for the amount of padding.-->
+                        <div class="text-center" style="font-family: Georgia, sans-serif;font-size:20px;">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="font-size:30px;font-style: italic">Lymnaea<br>
+                              (​Błotniarka)
+                           </h5>
+                           <!-- Product price-->
+                           <p>Ten gatunek ślimaka jest tzw. gatunkiem płucodysznym, tj. oddycha powietrzem atmosferycznym gromadzonym pod płaszczem. Ze względu, że oddycha powietrzem atmosferycznym, od czasu do czasu wypływa na powierzchnię wody. Maksymalnie żyje ok. 3, 4 lata.Błotniarka stawowa to ślimak słodkowodny stawów i jezior, bardzo licznie reprezentowany we wszelkich typach zbiorników słodkowodnych. Żywi się pokarmem zarówno roślinnym, jak i mięsnym, szczególnie martwą materią organiczną (czasem padliną zwierząt).</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+               <div class="col mb-5">
+                  <div class="card h-100 bg-transparent" style="border:none">
+                     <!-- Product image-->
+                     <a data-fancybox="gallery" href="assets/pobrane2.jpeg"><img class="card-img-top" style="height:300px;width:400px" src="assets/pobrane2.jpeg" alt="Karpie koi"></a> <!--<a> tag wokół <img> tagu, aby móc zastosować fancybox. Atrybut data-fancybox="gallery" umożliwia grupowanie zdjęć w galerii.-->
+                     <!-- Product details-->
+                     <div class="card-body p-4">
+                        <!--In Bootstrap, the "p-4" class is used to apply padding to an element. The "p" stands for "padding," and the "4" represents a predefined value for the amount of padding.-->
+                        <div class="text-center" style="font-family: Georgia, sans-serif;font-size:20px;">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="font-size:30px;font-style: italic">Żółw ozdobny<br>
+                              (Trachemys scripta)
+                           </h5>
+                           <!-- Product price-->
+                           <p>Żółw ozdobny jest gatunkiem stosunkowo dużym – długość karapaksu samic osiągać może 30 cm. Po obu stronach głowy, za oczami, widoczne są wyraźne paski koloru czerwonego, pomarańczowego lub żółtego. Kolor skóry mieści się w palecie od zieleni przez oliwkowy do brązowego, przy czym niezależnie od koloru występują na niej żółte paski. Szyja i nogi są mocno paskowane. Z wierzęta chętnie jedzą zieleninę, również rośliny, takie jak mięta, koniczyna, niezapominajka czy babka lancetowata i mniszek lekarski.</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+               <div class="col mb-5">
+                  <div class="card h-100 bg-transparent" style="border:none">
+                     <!-- Product image-->
+                     <a data-fancybox="gallery" href="assets/646fe556-e21d-a167-947a-5f60e108acd6.jpg"><img class="card-img-top" style="height:300px;width:400px" src="assets/646fe556-e21d-a167-947a-5f60e108acd6.jpg" alt="Karp"></a> <!--<a> tag wokół <img> tagu, aby móc zastosować fancybox. Atrybut data-fancybox="gallery" umożliwia grupowanie zdjęć w galerii.-->
+                     <!-- Product details-->
+                     <div class="card-body p-4">
+                        <!--In Bootstrap, the "p-4" class is used to apply padding to an element. The "p" stands for "padding," and the "4" represents a predefined value for the amount of padding.-->
+                        <div class="text-center" style="font-family: Georgia, sans-serif;font-size:20px;">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="font-size:30px;font-style: italic">Karp<br>
+                              (Cyprinus carpio)
+                           </h5>
+                           <!-- Product price-->
+                           <p>Karp jest jedną z najważniejszych ryb gospodarczych. Jest hodowany w stawach od tysięcy lat, został wprowadzany do wód otwartych. Chętnie poławiany przez wędkarzy na grunt (tzw. wędkarstwo karpiowe) i spławik.Karp występuje obecnie w ok. 60 krajach na wszystkich kontynentach (z wyłączeniem Antarktydy). W wielu z nich jest uważany za szkodnika. Żywi się larwami owadów, mięczakami, skorupiakami, glonami oraz innymi organizmami zwierzęcymi i roślinami.</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+               <div class="col mb-5">
+                  <div class="card h-100 bg-transparent" style="border:none">
+                     <!-- Product image-->
+                     <a data-fancybox="gallery" href="assets/Pterygoplichthys_gibbiceps_in_Botanic_garden_Teplice_1.JPG"><img class="card-img-top" style="height:300px;width:400px" src="assets/Pterygoplichthys_gibbiceps_in_Botanic_garden_Teplice_1.JPG" alt="Zbrojnik lamparci"></a> <!--<a> tag wokół <img> tagu, aby móc zastosować fancybox. Atrybut data-fancybox="gallery" umożliwia grupowanie zdjęć w galerii.-->
+                     <!-- Product details-->
+                     <div class="card-body p-4">
+                        <!--In Bootstrap, the "p-4" class is used to apply padding to an element. The "p" stands for "padding," and the "4" represents a predefined value for the amount of padding.-->
+                        <div class="text-center" style="font-family: Georgia, sans-serif;font-size:20px;">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="font-size:30px;font-style: italic">Zbrojnik lamparci<br>
+                              (Pterygoplichthys gibbiceps)
+                           </h5>
+                           <!-- Product price-->
+                           <p>Zbrojnik lamparci osiąga w warunkach naturalnych 50–60 cm długości (w akwariach 40–50 cm). Jest rybą stosunkowo spokojną, jedynie wobec innych ryb żerujących przy dnie potrafi być agresywny. Dobrze radzi sobie z agresją silnych pielęgnic, czy innych zbrojników. Aktywny głównie o zmroku i w nocy, w dzień chowa się w swojej kryjówce, choć można go przyzwyczaić do dziennej aktywności. Żyje ponad 20 lat.</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+               <div class="col mb-5">
+                  <div class="card h-100 bg-transparent" style="border:none">
+                     <!-- Product image-->
+                     <a data-fancybox="gallery" href="assets/MC_Rotfeuerfisch.jpg"><img class="card-img-top" style="height:300px;width:400px" src="assets/MC_Rotfeuerfisch.jpg" alt="Ognica rogata"></a> <!--<a> tag wokół <img> tagu, aby móc zastosować fancybox. Atrybut data-fancybox="gallery" umożliwia grupowanie zdjęć w galerii.-->
+                     <!-- Product details-->
+                     <div class="card-body p-4">
+                        <!--In Bootstrap, the "p-4" class is used to apply padding to an element. The "p" stands for "padding," and the "4" represents a predefined value for the amount of padding.-->
+                        <div class="text-center" style="font-family: Georgia, sans-serif;font-size:20px;">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="font-size:30px;font-style: italic">Ognica rogata,<br>
+                              skrzydlica rogata<br>
+                              (Pterois antennata)
+                           </h5>
+                           <!-- Product price-->
+                           <p>Średniej wielkości ryba o długości ciała do 20 cm, ubarwienie brązowo-czerwonawe, poprzecinane jasnymi pasami. Z jej płetw wyrastają liczne promienie. Kolce płetwy grzbietowej są połączone z gruczołami jadowymi. Cechą charakterystyczną są dwa "rogi" znajdujące się nad oczami.</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+               <div class="col mb-5">
+                  <div class="card h-100 bg-transparent" style="border:none">
+                     <!-- Product image-->
+                     <a data-fancybox="gallery" href="assets/z27904065AMPSamca-switezianki-blyszczacej-mozna-rozpoznac-po-p.jpg"><img class="card-img-top" style="height:300px;width:400px" src="assets/z27904065AMPSamca-switezianki-blyszczacej-mozna-rozpoznac-po-p.jpg" alt="Ważka"></a> <!--<a> tag wokół <img> tagu, aby móc zastosować fancybox. Atrybut data-fancybox="gallery" umożliwia grupowanie zdjęć w galerii.-->
+                     <!-- Product details-->
+                     <div class="card-body p-4">
+                        <!--In Bootstrap, the "p-4" class is used to apply padding to an element. The "p" stands for "padding," and the "4" represents a predefined value for the amount of padding.-->
+                        <div class="text-center" style="font-family: Georgia, sans-serif;font-size:20px;">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="font-size:30px;font-style: italic">Ważka<br>
+                              (Odonata)
+                           </h5>
+                           <!-- Product price-->
+                           <p>Kwiaty pojedyncze, duże, dorodne, trój płatkowe, jaskrawożółte z pomarańczowym odcieniem przy podstawie, mają liliowe pręciki i są bez zapachu. Aby roślina mogła zakwitnąć pączki kwiatowe koniecznie muszą rozwijać się nad wodą w przeciwnym wypadku gniją i obumierają, dlatego w akwarium trzeba je podnosić. W okresie kwitnienia roślina potrzebuje zwiększonej ilości światła i ciepła</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+            </div>
+         </div>
+         <p class="text-center" style=" ;font-family: Georgia, sans-serif; font-size:26px; color:#e0093f;box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);">
+            <!--box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); definiuje cień dla danego elementu. 
+               box-shadow: Jest to właściwość CSS, która służy do dodawania efektu cienia do elementu.
+               
+               0px 0px 5px: Ta część określa przesunięcie i rozmycie cienia. Konkretnie:
+               
+               0px - przesunięcie cienia w osi X (poziome przesunięcie). W tym przypadku nie ma przesunięcia poziomego, ponieważ wartość to 0px.
+               0px - przesunięcie cienia w osi Y (pionowe przesunięcie). W tym przypadku również nie ma przesunięcia pionowego, wartość to 0px.
+               5px - rozmycie cienia. Określa stopień rozmycia cienia. Im większa wartość, tym bardziej rozmyty będzie cień.
+               rgba(0, 0, 0, 0.5): Jest to wartość koloru cienia. Składa się z czterech składowych:
+               
+               0, 0, 0 - składowe koloru RGB. W tym przypadku są to wartości 0 dla czerwonego, zielonego i niebieskiego, co oznacza, że cień jest czarny.
+               0.5 - wartość alfa (przezroczystość). Wartość ta mieści się w zakresie od 0 do 1, gdzie 0 oznacza pełną przezroczystość, a 1 oznacza brak przezroczystości. W tym przypadku, wartość 0.5 oznacza, że cień jest półprzezroczysty.-->NAJPIĘKNIEJSZE ZWIERZĘTA
+         </p>
+         <!--dodanie paragrafu z tytułem galerii-->
+         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <a data-fancybox="gallery" href="assets/karpie-koi-13.jpg"><img style="height: 500px; display: block; margin: 0 auto;" src="assets/karpie-koi-13.jpg" alt="Pierwszy slajd-karpie koi"></a>
+               </div>
+               <div class="carousel-item">
+                  <a data-fancybox="gallery" href="assets/goldfish-interesting-and-surprising-facts-about-a-popular-pet.jpg"><img style="height: 500px; display: block; margin: 0 auto;" src="assets/goldfish-interesting-and-surprising-facts-about-a-popular-pet.jpg" alt="Drugi slajd- Złoty karaś"></a>
+               </div>
+               <div class="carousel-item">
+                  <a data-fancybox="gallery" href="assets/gemeiner-sonnenbarsch.jpg"><img style="height: 500px; display: block; margin: 0 auto;" src="assets/gemeiner-sonnenbarsch.jpg" alt="Trzeci slajd- Bass słoneczny"></a>
+               </div>
+               <div class="carousel-item">
+                  <a data-fancybox="gallery" href="assets/istockphoto-1081367822-612x612.jpg"><img style="height: 500px; display: block; margin: 0 auto;" src="assets/istockphoto-1081367822-612x612.jpg" alt="Czwarty slajd-Żaba trawna"></a>
+               </div>
+               <div class="carousel-item">
+                  <a data-fancybox="gallery" href="assets/images1.jpeg"><img style="height: 500px; display: block; margin: 0 auto;" src="assets/images1.jpeg" alt="Piąty slajd- Pluskolcowate"></a>
+               </div>
+               <div class="carousel-item">
+                  <a data-fancybox="gallery" href="assets/2558eca3d5ae8642adbcad198e93ed37_XL.jpg"><img style="height: 500px; display: block; margin: 0 auto;" src="assets/2558eca3d5ae8642adbcad198e93ed37_XL.jpg" alt="Szósty slajd-sumik kanałowy"></a>
+               </div>
+               <div class="carousel-item">
+                  <a data-fancybox="gallery" href="assets/maxresdefault.jpg"><img style="height: 500px; display: block; margin: 0 auto;" src="assets/maxresdefault.jpg" alt="Siódmy slajd - glonojady"></a>
+               </div>
+               <div class="carousel-item">
+                  <a data-fancybox="gallery" href="assets/pobrane2.jpeg"><img style="height: 500px; display: block; margin: 0 auto;" src="assets/pobrane2.jpeg" alt="Ósmy slajd-żółw ozdobny"></a>
+               </div>
+               <div class="carousel-item">
+                  <a data-fancybox="gallery" href="assets/1200px-Water_snail_Rex_2.jpg"><img style="height: 500px; display: block; margin: 0 auto;" src="assets/1200px-Water_snail_Rex_2.jpg" alt="Dziewiąty-błotniarka"></a>
+               </div>
+               <div class="carousel-item">
+                  <a data-fancybox="gallery" href="assets/MC_Rotfeuerfisch.jpg"><img style="height: 500px; display: block; margin: 0 auto;" src="assets/MC_Rotfeuerfisch.jpg" alt="Dziesiąty- Ognica rogata"></a>
+               </div>
+               <div class="carousel-item">
+                  <a data-fancybox="gallery" href="assets/Pterygoplichthys_gibbiceps_in_Botanic_garden_Teplice_1.JPG"><img style="height: 500px; display: block; margin: 0 auto;" src="assets/Pterygoplichthys_gibbiceps_in_Botanic_garden_Teplice_1.JPG" alt="Jedensaty - Zbrojnik lamparci"></a>
+               </div>
+               <div class="carousel-item">
+                  <a data-fancybox="gallery" href="assets/rybka.png"><img style="height: 500px; display: block; margin: 0 auto;" src="assets/rybka.png" alt="Dwunasty- Karp"></a>
+               </div>
+            </div>
+            <button style="background:linear-gradient(to top, orange,#FFFFFF)" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"><span class="visually-hidden">Previous</span></button> <button style="background:linear-gradient(to top, orange,#FFFFFF)" class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"><span class="visually-hidden">Next</span></button>
+         </div>
+         <!-- dodanie biblioteki fancybox, w celu umożliwienia powiększania zdjęć w galerii po kliknięciu na nie i zschowania możliwości nawigacji między zdjęciami galerii w trybie powiększenia-->
+      </section>
+      <!-- Footer-->
+      <footer class="py-5" style="background:linear-gradient(to top, #4d1523, #fcb17e)">
+         <div class="container">
+            <p class="m-0 text-center" style="font-size:20px;font-style:italic">Copyright © Aleksandra Olejarz 2023</p>
+         </div>
+      </footer>
+      <!-- Bootstrap core JS-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> <!-- Core theme JS-->
+      <script src="js/scripts.js"></script>
+   </body>
+</html>

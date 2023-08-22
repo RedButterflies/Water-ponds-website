@@ -1,0 +1,482 @@
+.fish {
+					  height: 120px;
+					  width: 200px;
+					  margin: 0 auto;
+					  animation: swim 60s infinite linear;
+					}
+
+					@keyframes swim {
+					  0% {
+						transform: translateX(-100%);
+					  }
+					  100% {
+						transform: translateX(60vw);
+					  }
+									}
+			
+/*.fish: Jest to nazwa klasy CSS, która zostanie przypisana do elementu, aby uruchomić animację pływania.
+
+height: 120px; width: 200px;: Określa wysokość i szerokość elementu o klasie .fish na 120 pikseli i 200 pikseli odpowiednio. Możesz dostosować te wartości do preferencji.
+
+margin: 0 auto;: Ustawia margines górny i dolny na 0, a margines lewy i prawy na auto, co powoduje wyśrodkowanie elementu w poziomie na stronie.
+
+animation: swim 60s infinite linear;: Ta deklaracja ustawia właściwość animation dla elementu z klasą .fish. Wartość swim odnosi się do nazwy animacji @keyframes swim, 60s oznacza czas trwania animacji (60 sekund), infinite oznacza, że animacja będzie trwać w nieskończoność, a linear określa funkcję czasową animacji (ruch równomierny).
+
+@keyframes swim: Jest to reguła @keyframes, która definiuje animację pływania. swim to nazwa animacji, która jest używana w deklaracji animation. Wewnątrz @keyframes są określone dwie klatki kluczowe (keyframes): 0% i 100%.
+
+0%: W tej klatce kluczowej, która reprezentuje początek animacji, określono transformację translateX(-100%). Oznacza to, że na początku animacji element jest przesunięty o 100% szerokości elementu poza lewą krawędź ekranu, co sprawia, że jest niewidoczny.
+
+100%: W tej klatce kluczowej, która reprezentuje koniec animacji, określono transformację translateX(60vw). Oznacza to, że na końcu animacji element jest przesunięty o 100% szerokości widocznego okna (viewport) w prawo, co sprawia, że jest w pełni widoczny*/
+/*value. vw stands for viewport width, so it ensures that the fish will swim across the entire screen regardless of the device's width.*/
+
+.spinning-flower {
+  
+  animation: spin 12s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*.spinning-flower: Jest to nazwa klasy CSS, która zostanie przypisana do elementu obrazu kwiatowego, aby uruchomić animację obrotu.
+
+animation: spin 4s infinite linear;: Ta deklaracja ustawia właściwość animation dla elementu z klasą .spinning-flower. Wartość spin odnosi się do nazwy animacji @keyframes spin, a 4s oznacza czas trwania animacji (4 sekundy). Właściwość infinite oznacza, że animacja będzie trwać w nieskończoność, a linear określa funkcję czasową animacji (ruch równomierny).
+
+@keyframes spin: Jest to reguła @keyframes, która definiuje animację obrotu. spin to nazwa animacji, która jest używana w deklaracji animation. Wewnątrz @keyframes są określone dwie klatki kluczowe (keyframes): 0% i 100%.
+
+0%: W tej klatce kluczowej, która reprezentuje początek animacji, określono transformację rotate(0). Oznacza to, że na początku animacji obraz jest obrócony o 0 stopni.
+
+100%: W tej klatce kluczowej, która reprezentuje koniec animacji, określono transformację rotate(360deg). Oznacza to, że na końcu animacji obraz zostanie obrócony o 360 stopni, co odpowiada pełnemu obrotowi wokół osi*/
+
+/* Resetowanie styli dla formularza */
+form {
+  margin: 0;
+  padding: 0;
+  color:#f6fa23;
+  font-weight:bold;
+  font-size:24px;
+  font-family: Georgia, sans-serif;
+  border-radius: 5px;
+}
+/* Resetowanie styli dla formularza jest stosowane, aby zapobiec dziedziczeniu niechcianych stylów z domyślnych arkuszy stylów przeglądarki i zapewnić spójny wygląd formularzy na różnych przeglądarkach */
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background:linear-gradient(to bottom, #7ab1de, #01121c); /* Tło formularza */
+  padding: 20px;
+  border-radius: 5px;
+  border: 3px #f6fa23 solid; 
+  box-shadow: 0 0 10px rgba(99, 155, 201, 0.5); /* Cień formularza */
+  /*0 represents the horizontal offset of the shadow. In this case, it is set to 0, which means the shadow is centered horizontally.
+0 represents the vertical offset of the shadow. In this case, it is set to 0, which means the shadow is centered vertically.
+10px represents the blur radius of the shadow. It determines how blurry or spread out the shadow will be. A higher value creates a more diffuse shadow, while a lower value creates a sharper shadow.
+rgba(99, 155, 201, 0.5) specifies the color and transparency of the shadow. In this case, the shadow color is a semi-transparent blue with RGB values of (99, 155, 201) and an opacity of 0.5.*/
+}
+
+h2 {
+  font-size: 36px;
+  font-weight:bold;
+  margin-bottom: 20px;
+  color:#ba1874;
+  text-align:center;
+  border: 5px #f2a5d1 dashed; 
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 3px solid #d11380; /* Ramka pola */
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight:bold;
+  margin-bottom: 20px;
+  color:#c41f7f
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+  transform: scale(1.5); /*Zmiana rozmiaru pól checkbox i radio*/
+
+ 
+}
+button{
+  background:linear-gradient(to bottom, #ff9100, #ffdf40); /* Tło przycisku */
+  color: #fff; /* Kolor tekstu przycisku */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+button[type="submit"] {
+  background:linear-gradient(to bottom, #00aaff, #01121c); /* Tło przycisku */
+  color: #fff; /* Kolor tekstu przycisku */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+
+button[type="button"] {
+  background:linear-gradient(to bottom, #00aaff, #01121c); /* Tło przycisku */
+  color: #fff; /* Kolor tekstu przycisku */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background:pink; /* Tło przycisku po najechaniu */
+}
+button[type="submit"]:hover {
+  background:linear-gradient(to bottom,#96006a, #eb00a5); /* Tło przycisku po najechaniu */
+}
+button[type="button"]:hover {
+  background:linear-gradient(to bottom,#96006a, #eb00a5); /* Tło przycisku po najechaniu */
+}
+
+/* Custom styles for specific fields */
+
+select[multiple] {
+  height: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-top: 5px;
+}
+
+/* Additional styles */
+
+fieldset {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none; /* Ramka zbiorcza dla grupy pól */
+
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color:#f2a5d1;
+  font-size:30px;
+}
+
+label[for= "terms"]{
+	color: #e075b3;
+}
+
+.invalid-field {
+  border: 3px solid red;
+}
+
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  font-family: Georgia, serif;
+  font-size: 20px;
+}
+.carousel {
+  width: 500px; 
+  margin: 0 auto;
+}
+
+.carousel .slide {
+  text-align: center;
+}
+
+.carousel .slide a {
+  display: block;
+}
+
+.carousel .slide img {
+  width: 100%;
+  height: auto;
+}
+/*W przypadku kodu *.carousel .slide img, gwiazdka na początku oznacza, że ta reguła CSS będzie miała zastosowanie do wszystkich elementów na stronie, które mają klasę */
+.carousel .slide .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.carousel .slide:hover .title {
+  opacity: 1;
+}
+
+/* Stylowanie tabeli */
+table {
+  width: 60%; /* Szerokość tabeli - 60% */
+  box-shadow: 0 2px 4px 6px rgba(252, 10, 119, 0.6);
+/*offset-x - określa poziomy przesunięcie cienia od elementu. Akceptuje wartości w pikselach lub jednostkach procentowych. Dodatnia wartość przesuwa cień w prawo, a wartość ujemna w lewo.
+offset-y - określa pionowe przesunięcie cienia od elementu. Akceptuje wartości w pikselach lub jednostkach procentowych. Dodatnia wartość przesuwa cień w dół, a wartość ujemna w górę.
+blur-radius - określa rozmycie cienia. Akceptuje wartości w pikselach. Im większa wartość, tym bardziej rozmyty będzie cień. Wartość zero oznacza brak rozmycia.
+spread-radius - określa rozprzestrzenienie cienia. Akceptuje wartości w pikselach. Dodatnia wartość powoduje rozprzestrzenienie cienia na zewnątrz, a wartość ujemna na wewnątrz elementu.*/ 
+ /* Cień tabeli - kolor bazowy: rgba(252, 10, 119, 0.6) */
+  margin: 20px auto; /* Marginesy - 20px na górze i dołu, automatyczne wyrównanie na środek */
+  font-family: Georgia, sans-serif; /* Rodzaj czcionki - Georgia, sans-serif */
+  font-size: 20px; /* Rozmiar czcionki - 20px */
+}
+
+/* Stylowanie nagłówków i komórek tabeli */
+th, td {
+  padding: 10px; /* Wypełnienie wewnątrz komórek - 10px */
+  text-align: left; /* Wyrównanie tekstu do lewej */
+  border-bottom: 6px #125370 dashed; /* Dolna granica komórek - linia przerywana w kolorze #125370 */
+}
+
+/* Stylowanie wierszy nieparzystych */
+tr:nth-child(odd) {
+  background: linear-gradient(to bottom, #ffef87, #fcdd14); /* Tło wiersza - gradient z odcieniami kolorów #ffef87 do #fcdd14 */
+  border: 6px #fcdd14 dashed; /* Obramowanie wiersza - linia przerywana w kolorze #fcdd14 */
+}
+
+/* Stylowanie wierszy parzystych */
+tr:nth-child(even) {
+  background: linear-gradient(to bottom, #edb9c2, #fc5672); /* Tło wiersza - gradient z odcieniami kolorów #edb9c2 do #fc5672 */
+  border: 6px #d65168 dotted; /* Obramowanie wiersza - linia kropkowana w kolorze #d65168 */
+}
+
+/* Stylowanie komórek w kolumnach parzystych */
+td:nth-child(even) {
+  background: linear-gradient(to bottom, #c1e8d3, #d679ed); /* Tło komórki - gradient z odcieniami kolorów #c1e8d3 do #d679ed */
+  border: 6px #d679ed dotted; /* Obramowanie komórki - linia kropkowana w kolorze #d679ed */
+}
+
+/* Stylowanie pierwszej komórki w wierszach */
+td:first-child {
+  font-weight: bold; /* Pogrubienie tekstu w pierwszej komórce */
+}
+
+/* Stylowanie nagłówków */
+th {
+  background: linear-gradient(to bottom, #ebaec9, #d11568); /* Tło nagłówka - gradient z odcieniami kolorów #ebaec9 do #d11568 */
+  border: 6px #fc0a77 dotted; /* Obramowanie nagłówka - linia kropkowana w kolorze #fc0a77 */
+  color: #08170f; /* Kolor tekstu - ciemny odcień #08170f */
+}
+/* Ustawienia dla kontenera guzików */
+.btn-group {
+  display: flex; /* Wyświetla guziki w linii */
+  justify-content: center; /* Wyśrodkowuje guziki wzdłuż osi poziomej */
+  align-items: center; /* Wyśrodkowuje guziki wzdłuż osi pionowej */
+  margin: 0 auto; /* Centruje kontener guzików na stronie */
+}
+
+/* Styl przycisków */
+.btn {
+  margin-bottom: 10px; /* Dodaje odstęp między przyciskami */
+  background: linear-gradient(to bottom, #FFC0CB, #FF69B4); /* Gradientowe tło przycisków */
+  color: #FFFFFF; /* Kolor czcionki na przyciskach */
+  font-weight: bold; /* Pogrubienie tekstu na przyciskach */
+  font-family: Georgia, sans-serif; /* Czcionka na przyciskach */
+  text-align: center; /* Wyśrodkowanie tekstu na przyciskach */
+  padding: 10px 20px; /* Wewnętrzne marginesy przycisków */
+  border: none; /* Usunięcie obramowania przycisków */
+  border-radius: 5px; /* Zaokrąglenie rogów przycisków */
+  font-size: 30px; /* Rozmiar czcionki na przyciskach */
+  cursor: pointer; /* Zmiana kursora na wskaźnik po najechaniu na przyciski */
+  width: 80vw; /* Szerokość przycisków na 80% szerokości dostępnej przestrzeni */
+}
+
+/* Efekt przy najechaniu na przycisk */
+.btn:hover {
+  background: linear-gradient(to bottom, #f5ebce, #fac019); /* Inny gradientowe tło po najechaniu */
+  color: #8B4513; /* Zmiana koloru czcionki po najechaniu */
+}
+
+/* Styl przyciska rozwijanego */
+.dropdown-toggle {
+  display: inline-block; /* Przycisk rozwijany ma być blokiem inline */
+  margin-left: 10px; /* Dodatkowy margines z lewej strony przycisku rozwijanego */
+  white-space: normal; /* Pozwala na zawijanie tekstu w przycisku, jeśli nie zmieści się w dostępnej przestrzeni */
+}
+
+
+/* Ukryty tekst w menu rozwijanym */
+.dropdown-menu .hidden-text {
+  display: none; /* Ukrycie tekstu na początku */
+  position: absolute; /* Ustala pozycję ukrytego tekstu jako absolutną względem menu rozwijanego */
+  top: 0; /* Ustala odległość górną ukrytego tekstu od menu rozwijanego */
+  left: 100%; /* Ustala odległość lewą ukrytego tekstu od menu rozwijanego */
+  padding: 10px; /* Wewnętrzne marginesy ukrytego tekstu */
+  background-color: #FFC0CB; /* Tło ukrytego tekstu */
+  color: #8B4513; /* Kolor czcionki ukrytego tekstu */
+  font-size: 16px; /* Rozmiar czcionki ukrytego tekstu */
+  border-radius: 5px; /* Zaokrąglenie rogów ukrytego tekstu */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Dodaje cień do ukrytego tekstu */
+}
+
+/* Wyświetlanie ukrytego tekstu po najechaniu na menu rozwijane */
+.dropdown-menu:hover .hidden-text {
+  display: block; /* Wyświetlanie ukrytego tekstu po najechaniu na menu rozwijane */
+}
+@media screen and (max-width: 800px) {
+  table {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  th,
+  td {
+	font-size:13px;
+    display: block;
+    width: 100%;
+    word-wrap: break-word; /* Zawijanie wierszy */
+  }
+
+  th {
+    text-align: left;
+  }
+
+  td {
+    margin-bottom: 10px;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    margin-right: 5px;
+	
+  }
+}
+
+
+
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+  table {
+    width: 60%;
+    margin: 0 auto;
+  }
+  th,
+  td {
+
+    display: block;
+    width: 100%;
+    word-wrap: break-word; /* Zawijanie wierszy */
+  }
+  }
+
+
+
+@media screen and (min-width: 1025px) {
+  table {
+    width: 60%;
+    margin: 0 auto;
+  }
+ th,
+  td {
+    font-size:8px;
+    width: 100%;
+    word-wrap: break-word; /* Zawijanie wierszy */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  table {
+    width: 60%;
+    margin: 0 auto;
+  }
+ th,
+  td {
+    font-size:10px;
+    width: 100%;
+    word-wrap: break-word; /* Zawijanie wierszy */
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  table {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+th,
+  td {
+   font-size:10px;
+    width: 100%;
+    word-wrap: break-word; /* Zawijanie wierszy */
+  }
+}
+#content {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+.decoration-button {
+            margin-right: 10px;
+            color: white;
+            border: none;
+            padding: 10px 10px;
+            cursor: pointer;
+			font-family: Georgia, sans-serif;
+			background:linear-gradient(to top, #a1edb2,#012108);
+        }
+
+#decoration-description {
+			color: white;
+            margin-top: 20px;
+			font-size:20px;
+            font-weight: bold;
+			font-family: Georgia, sans-serif;
+			
+			border: 3px yellow dashed;
+			
+        }
+        
+.decoration-button:hover {
+			background:linear-gradient(to bottom, yellow,#012108);/* Tło przycisku po najechaniu */
+}
+.dekoracja {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+			color:yellow;
+			font-weight:bold;
+			font-size:12px;
+			font-family: Georgia, sans-serif;
+			text-align:center;
+        }
+
+

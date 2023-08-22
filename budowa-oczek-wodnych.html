@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pl">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+      <meta name="description" content="" />
+      <meta name="author" content="Aleksandra Olejarz" />
+      <title>Oczka wodne i woda w ogrodzie</title>
+      <link rel="icon" type="image/x-icon" href="assets/logo_transparent.png"><!--Ten kod jest odpowiedzialny za dodanie ikony strony internetowej (favicon). -->
+      <!-- Core theme CSS (includes Bootstrap)-->
+      <link href="css/styles.css" rel="stylesheet" />
+      <link href="css/dodany-css.css" rel="stylesheet" />
+   </head>
+   <body>
+      <!-- Header-->
+      <header class="bg-dark py-1" style="background:linear-gradient(to bottom, #00aaff, #01121c)" >
+         <!--dodanie gradientu w tle obiektu header-->
+         <div class="container px-1 px-lg-1 my-1" >
+            <!-- px-1 dodanie paddingu poziomego o rozmaierze unit 1 do elementu container, px-lg-1 dodanie paddingu poziomego o rozmiarze unit 1 do bardzo dużych ekranów, my - margin y- dodanie podłużnego elementu margin o wielkości unit 1 -->
+            <div class="text-center text-white">
+               <a href="strona-glowna.html">
+               <img style="height: 350px" src="assets/logo_transparent.png"  alt="logo strony"/>
+               </a><!--dodanie obrazu w nagłówku o wysokości 350 px, po jego naciśnięciu otwierana jest trona główna-->
+            </div>
+         </div>
+      </header>
+      <!-- Navigation-->
+      <nav class="navbar navbar-expand-lg" style="background:linear-gradient(to bottom, #ff9100, #ffdf40); border-top: 3px solid #e02b79; border-bottom:3px solid #e02b79;font-size:20px;">
+         <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" style="border-top: 3px solid #286fbf;border-radius: 90px;color:#286fbf; font-size:12px">Budowa oczek wodnych</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" style="border-bottom: 3px solid #e02b79; border-radius: 90px; color: #e02b79" id="navbarDropdown" href="o-oczkach-wodnych.html" role="button">O oczkach wodnych</a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #ffdf40; border-top: 3px solid #e02b79; border-bottom: 3px solid #e02b79; font-size: 20px">
+                        <!-- Elementy rozwijanego menu -->
+                        <li><a class="dropdown-item" style="color: #286fbf" href="popularne-zwierzeta.html">Popularne zwierzęta</a></li>
+                        <li>
+                           <hr class="dropdown-divider" />
+                        </li>
+                        <li><a class="dropdown-item" style="color: #ecff5c" href="popularne-rosliny.html">Popularne rośliny</a></li>
+                     </ul>
+                  <li class="nav-item"><a class="nav-link" style="border-top: 3px solid #e02b79;border-radius: 90px;color: #ecff5c"  href="budowa-oczek-wodnych.html">Budowa oczek wodnych</a></li>
+                  <li class="nav-item"><a class="nav-link active" style="border-bottom: 3px solid #e02b79; border-radius: 90px; color: #e02b79" aria-current="page" href="strona-glowna.html">Strona główna</a></li>
+                  <li class="nav-item"><a class="nav-link" style="border-bottom: 3px solid #e02b79;border-radius: 90px;color: #e02b79" href="oczka-wodne-swiata.html">Oczka wodne świata</a></li>
+                  <li class="nav-item dropdown" >
+                     <a class="nav-link dropdown-toggle" style="border-bottom: 3px solid #e02b79;border-radius: 90px;color: #e02b79" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pielęgnacja oczek wodnych</a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#ffdf40;border-top: 3px solid #e02b79; border-bottom:3px solid #e02b79;font-size:20px;color: #e02b79">
+                        <!--Elementy aria-labelledby i aria-expanded są atrybutami dostępności (Accessibility) używanymi w celu poprawy dostępności dla użytkowników korzystających z czytników ekranowych lub innych asystentów. Atrybut aria-labelledby wskazuje na identyfikator innego elementu, który służy jako etykieta dla danego elementu, a aria-expanded informuje, czy element jest rozwinięty czy nie.-->
+                        <!--
+                           Atrybut data-bs-toggle="dropdown" jest używany wraz z frameworkiem Bootstrap, aby wskazać, że element jest przyciskiem lub linkiem do rozwijanego menu (dropdown).
+                           Kiedy użytkownik kliknie na element, który ma ten atrybut, framework Bootstrap obsługuje akcję rozwijania lub zwijania menu rozwijanego. W przypadku tego kodu, kiedy użytkownik kliknie na link <a>, który ma atrybut data-bs-toggle="dropdown", menu dropdown zostanie rozwinięte lub zwinięte w zależności od aktualnego stanu.
+                           -->
+                        <li><a class="dropdown-item" style="color: #286fbf" href="polecane-produkty.html">Polecane produkty</a></li>
+                        <li>
+                           <hr class="dropdown-divider" />
+                        </li>
+                        <li><a class="dropdown-item" style="color: #286fbf" href="wskazowki.html">Wskazówki</a></li>
+                        <!--href zawiera link odwołujący się do danej strony-->
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!-- Header2-->
+      <header class="bg-dark py-1" style="background:linear-gradient(to top, #011945,#223d6e)">
+         <!--dodanie gradientu w tle obiektu header-->
+         <div class="container px-1 px-lg-1 my-1">
+            <!-- px-1 dodanie paddingu poziomego o rozmaierze unit 1 do elementu container, px-lg-1 dodanie paddingu poziomego o rozmiarze unit 1 do bardzo dużych ekranów, my - margin y- dodanie podłużnego elementu margin o wielkości unit 1 -->
+            <div class="text-center text-white">
+               <img style="height: 150px" src="assets/logo_transparent1.png" alt="logo_transparent1">
+               <h1 class="display-4 fw-bolder" style="color:#faea0a;  ;font-family: Georgia, sans-serif">Budowa oczka wodnego<br> w krokach</h1>
+            </div>
+         </div>
+      </header>
+      <!-- Section-->
+      <section class="py-3" style="background:linear-gradient(to bottom, #011945,#000000)">
+         <div class="container px-3 px-lg-5 mt-5">
+            <div class="row gx-3 gx-lg-3 row-cols-1 row-cols-md-2 row-cols-xl-4 justify-content-center">
+               <div class="col mb-5">
+                  <div class="card h-100" style="background:linear-gradient(to top, #a1edb2,#012108);border:3px #f6fa23 solid">
+                     <!-- Product image-->
+                     <img class="card-img-top" style="height:250px" src="assets/summer-garden-pond-6117983.jpg" alt="Odpowiednie miejsce do budowy oczka wodnego" />
+                     <!-- Product details-->
+                     <div class="card-body p-4">
+                        <div class="text-center"  style=" ;font-size:24px;font-family: Georgia, sans-serif;color:#3b0209">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="color:#f6fa23;font-weight:bold;font-size:28px;font-family: Georgia, sans-serif;">1. Wybór odpowiedniego miejsca</h5>
+                           <!-- Product price-->
+                           <p>Oczko wodne powinno być zlokalizowane <br>w miejscu wystarczająco słonecznym, <br>ale jednocześnie chronionym przed silnymi wiatrami. Ważne jest także, aby teren był równy <br>i niezbyt wilgotny.</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+               <div class="col mb-5">
+                  <div class="card h-100" style="background:linear-gradient(to top, #a1edb2,#012108);border:3px #f6fa23 solid">
+                     <!-- Product image-->
+                     <img class="card-img-top" style="height:250px" src="assets/garden-work-being-done-transplanting-celosia-seedlings-newly-landscaped-fllowerbed-colorful-ornamental-flowering-41590431.jpg" alt="Zdjęcie ogrodu" />
+                     <!-- Product details-->
+                     <div class="card-body p-4">
+                        <div class="text-center"  style=" ;font-size:24px;font-family: Georgia, sans-serif;color:#3b0209">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="color:#f6fa23;font-weight:bold;font-size:28px;font-family: Georgia, sans-serif">2. Oznaczenie kształtu</h5>
+                           <!-- Product price-->
+                           <p>Za pomocą wodoodpornego sprayu lub sznurka należy oznaczyć kształt oczka wodnego na powierzchni ziemi. Może to być kształt owalny, prostokątny lub nieregularny.</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+               <div class="col mb-5">
+                  <div class="card h-100" style="background:linear-gradient(to top, #a1edb2,#012108);border:3px #f6fa23 solid">
+                     <!-- Product image-->
+                     <img class="card-img-top" style="height:250px" src="assets/digging-hole-planting-bush-garden-97251415.jpg" alt="Proces kopania dołka na oczko wodne" />
+                     <!-- Product details-->
+                     <div class="card-body p-4">
+                        <div class="text-center"  style=" ;font-size:24px;font-family: Georgia, sans-serif;color:#3b0209">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="color:#f6fa23;font-weight:bold;font-size:28px;font-family: Georgia, sans-serif">3. Wykopanie dołka</h5>
+                           <!-- Product price-->
+                           <p>Następnie należy wykopać dołek zgodnie z oznaczonym kształtem oczka wodnego. Głębokość<br> i szerokość dołka zależy od planowanej wielkości oczka wodnego.</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+               <div class="col mb-5">
+                  <div class="card h-100" style="background:linear-gradient(to top, #a1edb2,#012108);border:3px #f6fa23 solid">
+                     <!-- Product image-->
+                     <img class="card-img-top" style="height:250px" src="assets/mature-woman-hand-taking-out-weeds-plants-stones-floor-authentic-gardening-scene-spring-time-selective-focus-183554397.jpg" alt="Usuwanie kamieni i roślin" />
+                     <!-- Product details-->
+                     <div class="card-body p-4">
+                        <div class="text-center"  style=" ;font-size:24px;font-family: Georgia, sans-serif;color:#3b0209">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="color:#f6fa23;font-weight:bold;font-size:28px;font-family: Georgia, sans-serif">4. Usunięcie kamieni<br> i korzeni</h5>
+                           <!-- Product price-->
+                           <p>Po wykopaniu dołka należy dokładnie usunąć kamienie, korzenie <br>i inne przeszkody z dna oraz ścian bocznych dołka.</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+               <div class="col mb-5">
+                  <div class="card h-100" style="background:linear-gradient(to top, #a1edb2,#012108);border:3px #f6fa23 solid">
+                     <!-- Product image-->
+                     <img class="card-img-top" style="height:250px" src="assets/img2B.jpg" alt="Wyłożenie dna oczka wodnego folią" />
+                     <!-- Product details-->
+                     <div class="card-body p-4">
+                        <div class="text-center"  style=" ;font-size:24px;font-family: Georgia, sans-serif;color:#3b0209">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="color:#f6fa23;font-weight:bold;font-size:28px;font-family: Georgia, sans-serif">5. Wstępne ułożenie folii</h5>
+                           <!-- Product price-->
+                           <p>Na dnie dołka należy położyć folię z tworzywa sztucznego, która będzie stanowić wodoodporną barierę dla oczka wodnego. Folie powinny być przycinane w taki sposób, <br>aby pozostawiały wystarczającą ilość materiału do pokrycia brzegów.</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+               <div class="col mb-5">
+                  <div class="card h-100" style="background:linear-gradient(to top, #a1edb2,#012108);border:3px #f6fa23 solid">
+                     <!-- Product image-->
+                     <img class="card-img-top" style=height:250px src="assets/artificial-pond-construction-mason-building-garden-coating-surface-cement-prepared-cement-mixer-65328242.jpg" alt="Izolacja oczka wodnego" />
+                     <!-- Product details-->
+                     <div class="card-body p-4">
+                        <div class="text-center"  style=" ;font-size:24px;font-family: Georgia, sans-serif;color:#3b0209">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="color:#f6fa23;font-weight:bold;font-size:28px;font-family: Georgia, sans-serif">6. Ułożenie warstw izolacyjnych</h5>
+                           <!-- Product price-->
+                           <p>Na folię należy położyć warstwę izolacyjną z piasku lub maty geowłókninowej, <br>która zabezpieczy folię przed uszkodzeniami.</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+               <div class="col mb-5">
+                  <div class="card h-100" style="background:linear-gradient(to top, #a1edb2,#012108);border:3px #f6fa23 solid">
+                     <!-- Product image-->
+                     <img class="card-img-top" style="height:250px" src="assets/fish-pond17.jpg" alt="Układane kamienie" />
+                     <!-- Product details-->
+                     <div class="card-body p-4">
+                        <div class="text-center"  style=" ;font-size:24px;font-family: Georgia, sans-serif;color:#3b0209">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="color:#f6fa23;font-weight:bold;font-size:28px;font-family: Georgia, sans-serif">7. Ułożenie kamieni</h5>
+                           <!-- Product price-->
+                           <p>Po ułożeniu izolacji należy ułożyć kamienie na brzegach oczka wodnego. Kamienie można ułożyć w taki sposób,<br> aby tworzyły naturalne, organiczne obramowanie.</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+               <div class="col mb-5">
+                  <div class="card h-100" style="background:linear-gradient(to top, #a1edb2,#012108);border:3px #f6fa23 solid">
+                     <!-- Product image-->
+                     <img class="card-img-top" style="height:250px" src="assets/build-a-pond-in-your-yard-1821228-hero-d5abc8f7f8e945d59bbc2f809816d0a8.jpg" alt="Wypełnianie oczka wodą" />
+                     <!-- Product details-->
+                     <div class="card-body p-4">
+                        <div class="text-center"  style=" ;font-size:24px;font-family: Georgia, sans-serif;color:#3b0209">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="color:#f6fa23;font-weight:bold;font-size:28px;font-family: Georgia, sans-serif">8. Wypełnienie oczka wodnego wodą</h5>
+                           <!-- Product price-->
+                           <p>Po ułożeniu kamieni można wypełnić oczko wodne wodą. Woda powinna być nalewana stopniowo, aby folia nie została uszkodzona.</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+               <div class="col mb-5">
+                  <div class="card h-100" style="background:linear-gradient(to top, #a1edb2,#012108);border:3px #f6fa23 solid">
+                     <!-- Product image-->
+                     <img class="card-img-top" style="height:250px" src="assets/beautiful-garden-pond-outdoor-electric-water-pump-beautiful-garden-pond-outdoor-electric-water-pump-late-summer-205438022.jpg" alt="Pompa wodna" />
+                     <!-- Product details-->
+                     <div class="card-body p-4">
+                        <div class="text-center"  style=" ;font-size:24px;font-family: Georgia, sans-serif;color:#3b0209">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="color:#f6fa23;font-weight:bold;font-size:28px;font-family: Georgia, sans-serif">9. Instalacja pompy</h5>
+                           <!-- Product price-->
+                           <p>Aby utrzymać wodę <br>w ruchu i zapobiec jej zgłębnieniu, należy zainstalować pompę,<br> która będzie cyrkulowała wodę przez oczko wodne.</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+               <div class="col mb-5">
+                  <div class="card h-100" style="background:linear-gradient(to top, #a1edb2,#012108);border:3px #f6fa23 solid">
+                     <!-- Product image-->
+                     <img class="card-img-top" style="height:250px" src="assets/istockphoto-1251185032-612x612.jpg" alt="Ukończona budowa oczka wodnego" />
+                     <!-- Product details-->
+                     <div class="card-body p-4">
+                        <div class="text-center"  style=" ;font-size:24px;font-family: Georgia, sans-serif;color:#3b0209">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder" style="color:#f6fa23;font-weight:bold;font-size:28px;font-family: Georgia, sans-serif">10. Dodanie roślin<br> i dekoracji</h5>
+                           <!-- Product price-->
+                           <p>Na koniec można dodać do oczka wodnego rośliny wodne, <br>jak np. trzciny czy lilie wodne oraz dekoracje, jak kamienie, koryta, mostki czy figurki.</p>
+                        </div>
+                     </div>
+                     <!-- Product actions-->
+                  </div>
+               </div>
+            </div>
+         </div>
+		 <h3 style="color:#f6fa23;font-weight:bold;font-size:24px;font-family: Georgia, sans-serif;text-align:center">Najbardziej popularne dekoracje oczek wodnych</h3>
+    <div id="content">
+        <div id="decoration-buttons"></div>
+        <div id="decoration-description"></div>
+		<div id="decoration-image"></div>
+    </div>
+	<br>
+	<br>
+	<br>
+	<div id="json-form">
+	 <h3  style="color:pink;font-weight:bold;font-size:24px;font-family: Georgia, sans-serif;text-align:center">Zaprojektuj swoje wymarzone dekoracje!</h3>
+	 
+    <form onsubmit="event.preventDefault(); zapiszDane();">
+        <label for="nazwa">Nazwa:</label>
+        <input type="text" id="nazwa" required><br><br>
+
+        <label for="kolor">Kolor:</label>
+        <input type="text" id="kolor" required><br><br>
+
+        <label for="opis">Opis:</label>
+        <textarea id="opis" required></textarea><br><br>
+
+        <button type="submit">Zapisz</button>
+        <button type="button" onclick="resetujFormularz()">Resetuj</button>
+        <button type="button" onclick="usunWszystkieDane()">Usuń wszystkie dane</button>
+    </form>
+	
+<br>
+<br>
+<br>
+    <h3 style="color:pink;font-weight:bold;font-size:24px;font-family: Georgia, sans-serif;text-align:center">Twoje dekoracje:</h3>
+    <div id="wynik-container"></div>
+
+    <script src="script.js"></script>
+    <script>
+        wyswietlWszystkieDane();
+    </script>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+         <form action="mailto:s99208@pollub.edu.pl" method="post" onsubmit="return validateForm()">
+            <h2>Formularz o wymarzonym oczku wodnym</h2>
+            <fieldset>
+               <legend>Dane osobowe:</legend>
+               <label for="name">Imię:</label>
+               <input type="text" id="name" name="name" placeholder="Wprowadź imię">
+               <div id="nameError" class="error-message"></div>
+               <label for="email">Email:</label>
+               <input type="email" id="email" name="email" placeholder="Wprowadź email w formacie abc@abc.abc">
+               <div id="emailError" class="error-message"></div>
+               <label for="phone">Telefon:</label>
+               <input type="tel" id="phone" name="phone" placeholder="Wprowadź numer telefonu">
+               <div id="phoneError" class="error-message"></div>
+               <label for="country">Państwo:</label>
+               <select id="country" name="country">
+                  <option value="">Wybierz państwo</option>
+                  <option value="Polska">Polska</option>
+                  <option value="Niemcy">Niemcy</option>
+                  <option value="Francja">Francja</option>
+                  <option value="Włochy">Włochy</option>
+                  <option value="Hiszpania">Hiszpania</option>
+               </select>
+               <div id="countryError" class="error-message"></div>
+               <label for="city">Miasto:</label>
+               <input type="text" id="city" name="city" placeholder="Wprowadź miasto">
+               <label for="zip">Kod pocztowy:</label>
+               <input type="text" id="zip" name="zip" placeholder="Wprowadź kod pocztowy">
+               <div id="zipError" class="error-message"></div>
+            </fieldset>
+            <fieldset>
+               <legend>Informacje o oczku wodnym:</legend>
+               <label for="location">Położenie:</label>
+               <input type="text" id="location" name="location" placeholder="Wprowadź położenie oczka wodnego">
+               <div id="locationError" class="error-message"></div>
+               <label for="size">Rozmiar (m2):</label>
+               <input type="number" id="size" name="size" min="1" placeholder="Wprowadź rozmiar w metrach kwadratowych">
+               <div id="sizeError" class="error-message"></div>
+               <label for="depth">Głębokość (cm):</label>
+               <input type="number" id="depth" name="depth" min="1" placeholder="Wprowadź głębokość w centymetrach">
+               <div id="depthError" class="error-message"></div>
+               <label for="features">Dodatkowe cechy:</label>
+               <select id="features" name="features" multiple>
+                  <option value="fontanna">Fontanna</option>
+                  <option value="mostek">Mostek</option>
+                  <option value="rosliny">Dodatkowe rośliny</option>
+                  <option value="rybki">Dodatkowe rybki</option>
+               </select>
+               <label>Oświetlenie:</label>
+               <input type="radio" id="lighting1" name="lighting" value="tak">
+               <label for="lighting1">Tak</label>
+               <input type="radio" id="lighting2" name="lighting" value="nie">
+               <label for="lighting2">Nie</label>
+               <div id="lightingError" class="error-message"></div>
+               <label for="comments">Dodatkowe uwagi:</label>
+               <textarea id="comments" name="comments" rows="4" maxlength="200" placeholder="Wprowadź dodatkowe uwagi - max 200 znaków"></textarea>
+               <label for="terms">Akceptuję regulamin:</label>
+               <input type="checkbox" id="terms" name="terms">
+               <label for="terms">Zgadzam się z regulaminem</label>
+               <div id="termsError" class="error-message"></div>
+            </fieldset>
+            <button type="submit">Wyślij</button>
+            <button type="button" onclick="saveData()">Zapisz dane</button>
+            <button type="button" onclick="displayData()">Wyświetl zapisane dane</button>
+            <button type="button" onclick="clearData()">Usuń zapisane dane</button>
+         </form>
+         <h3>Zapisane dane</h3>
+         <br>
+         <h4>Wprowadź imię:</h4>
+         <input type="text" id="searchInput" placeholder="Szukaj danych" onkeyup="searchData()">
+         <div id="dataContainer">
+            <table id="dataTable">
+               <thead>
+                  <tr>
+                     <th>Imię:</th>
+                     <th>Email:</th>
+                     <th>Nr Telefonu:</th>
+                     <th>Kraj:</th>
+                     <th>Miasto:</th>
+                     <th>Kod pocztowy:</th>
+                     <th>Położenie:</th>
+                     <th>Rozmiar:</th>
+                     <th>Głębokość:</th>
+                     <th>Oświetlenie:</th>
+                     <th>Dodatkowe cechy:</th>
+                     <th>Dodatkowe uwagi:</th>
+                     <th>Akcje</th>
+                  </tr>
+               </thead>
+               <tbody id="dataItems"></tbody>
+            </table>
+            <p id="emptyDataMessage">Brak zapisanych danych</p>
+         </div>
+      </section>
+      <!-- Footer-->
+      <footer class="py-5" style="background:linear-gradient(to top,#faea0a,#000000)">
+         <div class="container">
+            <p class="m-0 text-center" style="font-size:20px;font-style:italic">Copyright &copy; Aleksandra Olejarz 2023</p>
+         </div>
+      </footer>
+      <!-- Core theme JS-->
+      <script src="js/scripts.js"></script>
+	  <script src="js/spa.js"></script>
+	  <script src="js/skrypt-json-obiekt.js"></script>
+      <!-- Bootstrap core JS-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+   </body>
+</html>
